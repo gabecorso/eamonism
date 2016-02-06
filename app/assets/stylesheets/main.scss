@@ -1,0 +1,561 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url("../GothamBold.otf");
+}
+
+/*******************************************************
+					LANDING PAGE
+*******************************************************/
+.home-left {
+	float: left;
+}
+
+.title {
+	font-size: 50px;
+	font-family: Lato;
+	margin: 275px 0 0 175px;
+}
+
+.bird img {
+	float: right;
+	margin-top: 150px;
+}
+
+.dot {
+	margin: 15px 0 0 185px;
+}
+
+.dot img {
+	padding-right: 20px;
+}
+
+/*******************************************************
+			    PORTFOLIO / PHOTO GRID
+*******************************************************/
+
+hr {
+	width: 100%;
+	height: 3px;
+	background-color: black;
+	padding: 0;
+	margin: 0;
+}
+
+.wrap {
+   overflow: hidden;
+   margin-top: -2px;
+}
+
+.box {
+   float: left;
+   position: relative;
+   width: 33.3%;
+   padding-bottom: 33.3%;
+}
+
+.boxInner {
+   position: absolute;
+   width: 100%;
+}
+
+.boxInner img {
+   width: 100%;
+}
+
+body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+   margin-bottom: 0;
+}
+
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+}
+
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 25%;
+   }
+}
+
+/*******************************************************
+					ARTIST BIO
+*******************************************************/
+.eamon {
+	margin-top: 50px;
+	margin-left: 175px;
+	display: inline-block;
+	float: left;
+	padding-bottom: 50px;
+}
+
+.fname {
+	position: absolute;
+	color: white;
+	font-family: GothamBold;
+	font-size: 40px;
+	padding-top: 60px;
+	padding-left: 380px;
+	text-shadow: 3px 3px 15px #000000;
+}
+
+.lname {
+	color: black;
+	font-family: GothamBold;
+	font-size: 40px;
+	padding-top: 60px;
+}
+
+.bio {
+	margin: 40px 150px 0 600px;
+	font-family: Lato;
+	font-size: 18px;
+}
+
+/*******************************************************
+					CONTACT
+*******************************************************/
+#logo {
+	padding-left: 175px;
+	padding-top: 40px;
+}
+
+.email {
+	display: inline-block;
+	padding-left: 30px;
+	font-family: Lato;
+	font-size: 17px;
+	vertical-align: middle;
+	margin-top: -20px;
+}
+
+.phone {
+	display: inline-block;
+	padding-left: 30px;
+	font-family: Lato;
+	font-size: 17px;
+	vertical-align: middle;
+	margin-top: -20px;
+}
+
+.footer {
+	width: 100%;
+	background-color: black;
+	margin-top: 40px;
+	text-align: center;
+	font-family: Lato;
+	vertical-align: middle;
+	padding: 20px 0;
+	font-size: 16px;
+}
+
+.footer a {
+	color: white;
+	text-decoration: none;
+}
+
+/*******************************************************
+					MEDIA QUERIES
+*******************************************************/
+
+@media (min-width: 320px) {
+	.section-header {
+		font-family: Lato;
+		font-size: 20px;
+		padding: 20px 0 20px 30px;
+	}
+
+	.eamon {
+		margin-top: 50px;
+		margin-left: 30px;
+		display: inline-block;
+		float: left;
+		padding-bottom: 0px;
+	}
+
+	.eamon img {
+		width: 270px;
+	}
+
+	.fname {
+		position: absolute;
+		color: white;
+		font-family: GothamBold;
+		font-size: 40px;
+		padding-top: 310px;
+		padding-left: 40px;
+		text-shadow: 3px 3px 15px #000000;
+	}
+
+	.lname {
+		color: black;
+		font-family: GothamBold;
+		font-size: 40px;
+		padding-left: 40px;
+	}
+
+	.bio {
+		margin: 20px 50px 0 30px;
+		font-family: Lato;
+		font-size: 16px;
+		clear: both;
+		padding-bottom: 40px;
+	}
+
+	.bird img {
+		width: 150px;
+		padding-bottom: 100px;
+	}
+
+	.title {
+		font-size: 25px;
+		font-family: Lato;
+		margin: 150px 0 0 30px;
+	}
+
+	.dot {
+		margin: 15px 0 0 35px;
+	}
+
+	#logo {
+		padding-left: 30px;
+	}
+}
+
+
+@media (min-width: 400px) {
+	.section-header {
+		font-family: Lato;
+		font-size: 20px;
+		padding: 20px 0 20px 30px;
+	}
+
+	.eamon {
+		margin-top: 50px;
+		margin-left: 30px;
+		display: inline-block;
+		float: left;
+		padding-bottom: 0px;
+	}
+
+	.eamon img {
+		width: 300px;
+	}
+
+	.fname {
+		position: absolute;
+		color: white;
+		font-family: GothamBold;
+		font-size: 40px;
+		padding-top: 340px;
+		padding-left: 40px;
+		text-shadow: 3px 3px 15px #000000;
+	}
+
+	.lname {
+		color: black;
+		font-family: GothamBold;
+		font-size: 40px;
+		padding-left: 40px;
+	}
+
+	.bio {
+		margin: 20px 50px 0 30px;
+		font-family: Lato;
+		font-size: 16px;
+		clear: both;
+		padding-bottom: 40px;
+	}
+
+	.bird img {
+		width: 200px;
+	}
+
+	.title {
+		font-size: 25px;
+		font-family: Lato;
+		margin: 150px 0 0 30px;
+	}
+
+	.dot {
+		margin: 15px 0 0 35px;
+	}
+
+	#logo {
+		padding-left: 30px;
+	}
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+	.section-header {
+		font-family: Lato;
+		font-size: 20px;
+		padding: 20px 0 20px 30px;
+	}
+
+	.eamon {
+		margin-top: 50px;
+		margin-left: 30px;
+		display: inline-block;
+		float: left;
+		padding-bottom: 20px;
+	}
+
+	.eamon img {
+		width: 300px;
+	}
+
+	.fname {
+		position: absolute;
+		color: white;
+		font-family: GothamBold;
+		font-size: 40px;
+		padding-top: 60px;
+		padding-left: 160px;
+		text-shadow: 3px 3px 15px #000000;
+	}
+
+	.lname {
+		color: black;
+		font-family: GothamBold;
+		font-size: 40px;
+		padding-top: 60px;
+	}
+
+	.bio {
+		margin: 20px 100px 0 30px;
+		font-family: Lato;
+		font-size: 16px;
+		clear: both;
+		padding-bottom: 40px;
+	}
+
+	.bird img {
+		width: 300px;
+	}
+
+	.title {
+		font-size: 30px;
+		font-family: Lato;
+		margin: 200px 0 0 30px;
+	}
+
+	.dot {
+		margin: 15px 0 0 35px;
+	}
+
+	#logo {
+		padding-left: 30px;
+	}
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+	.section-header {
+		font-family: Lato;
+		font-size: 22px;
+		padding: 20px 0 20px 100px;
+	}
+
+	.eamon {
+		margin-top: 50px;
+		margin-left: 100px;
+		display: inline-block;
+		float: left;
+		padding-bottom: 20px;
+	}
+
+	.eamon img {
+		width: 300px;
+	}
+
+	.fname {
+		position: absolute;
+		color: white;
+		font-family: GothamBold;
+		font-size: 40px;
+		padding-top: 60px;
+		padding-left: 230px;
+		text-shadow: 3px 3px 15px #000000;
+	}
+
+	.lname {
+		color: black;
+		font-family: GothamBold;
+		font-size: 40px;
+		padding-top: 60px;
+	}
+
+	.bio {
+		margin: 20px 100px 0 100px;
+		font-family: Lato;
+		font-size: 16px;
+		clear: both;
+		padding-bottom: 40px;
+	}
+
+	.bird img {
+		width: 400px;
+	}
+
+	.title {
+		font-size: 40px;
+		font-family: Lato;
+		margin: 275px 0 0 100px;
+	}
+
+	.dot {
+		margin: 15px 0 0 105px;
+	}
+
+	#logo {
+		padding-left: 100px;
+	}
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+	.bio {
+		margin: 20px 50px 0 600px;
+		font-family: Lato;
+		font-size: 16px;
+		clear: none;
+	}
+
+	.eamon {
+		margin-top: 50px;
+		margin-left: 175px;
+		display: inline-block;
+		float: left;
+		padding-bottom: 50px;
+	}
+
+	.eamon img {
+		width: 375px;
+	}
+
+	.fname {
+		position: absolute;
+		color: white;
+		font-family: GothamBold;
+		font-size: 40px;
+		padding-top: 60px;
+		padding-left: 380px;
+		text-shadow: 3px 3px 15px #000000;
+	}
+
+	.lname {
+		color: black;
+		font-family: GothamBold;
+		font-size: 40px;
+		padding-top: 60px;
+	}
+
+	.bird img {
+		width: 450px;
+	}
+
+	.home-left {
+		float: left;
+	}
+
+	.title {
+		font-size: 50px;
+		font-family: Lato;
+		margin: 275px 0 0 175px;
+	}
+
+	.dot {
+		margin: 15px 0 0 185px;
+	}
+
+	.dot img {
+		padding-right: 20px;
+	}
+
+	.section-header {
+		font-family: Lato;
+		font-size: 25px;
+		padding: 20px 0 20px 175px;
+	}
+
+	#logo {
+		padding-left: 175px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.bird img {
+		width: 600px;
+		float: right;
+		margin-top: 150px;
+	}
+
+	.home-left {
+		float: left;
+	}
+
+	.title {
+		font-size: 50px;
+		font-family: Lato;
+		margin: 275px 0 0 175px;
+	}
+
+	.dot {
+		margin: 15px 0 0 185px;
+	}
+
+	.dot img {
+		padding-right: 20px;
+	}
+
+	.bio {
+		margin: 40px 150px 0 600px;
+		font-family: Lato;
+		font-size: 18px;
+	}
+
+	.fname {
+		position: absolute;
+		color: white;
+		font-family: GothamBold;
+		font-size: 40px;
+		padding-top: 60px;
+		padding-left: 380px;
+		text-shadow: 3px 3px 15px #000000;
+	}
+
+	.lname {
+		color: black;
+		font-family: GothamBold;
+		font-size: 40px;
+		padding-top: 60px;
+	}
+}
