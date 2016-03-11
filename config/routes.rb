@@ -5,6 +5,17 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+
+
+  
+
+
+
+
+
+  #webhook
+  post "/order/complete" => "order#complete"
+  post "/hook" => "order#hook"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
