@@ -2,107 +2,116 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<title>Eamonism</title>
 	<meta charset="utf-8">
-	<!--<link rel="stylesheet" type="text/css" href="css/main.scss">
+	<link rel="stylesheet" type="text/css" href="css/main.scss">
 	<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/skeleton.css">
-	<script type="text/javascript" src="main.js"></script>-->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body>
 	<!-- LANDING PAGE -->
 	<div class="home-left">
-		<div class="title">E A M O N I S M</div>
+		<div class="title">EAMONISM</div>
 		<div class="dot"><img src="https://s3.amazonaws.com/eamonism/circle.png" /><img src="https://s3.amazonaws.com/eamonism/circle.png" /><img src="https://s3.amazonaws.com/eamonism/circle.png" /></div>
 	</div>
-	<div class="bird"><img src="https://s3.amazonaws.com/eamonism/bwbird.png" id="bird" onmouseover="colorBird()" onmouseout="grayscaleBird()"/></div>
+	<div id="cf3">
+	  <img class="bottom" src="https://s3.amazonaws.com/eamonism/colorbird.png" />
+	  <img class="top" id="bird" src="https://s3.amazonaws.com/eamonism/bwbird.png" />
+	</div>
+
 
 	<!-- PORTFOLIO -->
 	<hr>
-	<div class="section-header">P O R T F O L I O</div>
+	<div class="section-header">PORTFOLIO</div>
 	<hr>
-
-	<div class="wrap">
-		<div class="box">
+	<div class="wrap" id="wrap">
+		<div class="box" >
 	    	<div class="boxInner">
-	      		<img src="https://s3.amazonaws.com/eamonism/port1.jpg" />
+	      		<img id="0" onclick='startLightBox(event)' src="https://s3.amazonaws.com/eamonism/port1.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="https://s3.amazonaws.com/eamonism/port2.jpg" />
+	      		<img id="1" src="https://s3.amazonaws.com/eamonism/port2.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="https://s3.amazonaws.com/eamonism/port3.jpg" />
+	      		<img id="2" src="https://s3.amazonaws.com/eamonism/port3.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="https://s3.amazonaws.com/eamonism/port4.jpg" />
+	      		<img id="3" src="https://s3.amazonaws.com/eamonism/port4.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="https://s3.amazonaws.com/eamonism/port5.jpg" />
+	      		<img id="4" src="https://s3.amazonaws.com/eamonism/port5.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="https://s3.amazonaws.com/eamonism/port6.jpg" />
+	      		<img id="5" src="https://s3.amazonaws.com/eamonism/port6.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="https://s3.amazonaws.com/eamonism/port7.jpg" />
+	      		<img id="6" src="https://s3.amazonaws.com/eamonism/port7.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="https://s3.amazonaws.com/eamonism/port8.jpg" />
+	      		<img id="7" src="https://s3.amazonaws.com/eamonism/port8.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="https://s3.amazonaws.com/eamonism/port9.jpg" />
+	      		<img id="8" src="https://s3.amazonaws.com/eamonism/port9.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="https://s3.amazonaws.com/eamonism/port10.jpg" />
+	      		<img id="9" src="https://s3.amazonaws.com/eamonism/port10.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="https://s3.amazonaws.com/eamonism/port11.jpg" />
+	      		<img id="10" src="https://s3.amazonaws.com/eamonism/port11.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="https://s3.amazonaws.com/eamonism/port12.jpg" />
+	      		<img id="11" src="https://s3.amazonaws.com/eamonism/port12.jpg" />
 	    	</div>
 	  	</div>
 	</div>
+
+      <div id="myModal" class="modal">
+		  <span class="close">×</span>
+		  <img class="modal-content" id="img">
+		  <div id="caption"></div>
+	  </div>
 	<!-- /#wrap -->
 
 	<!-- ARTIST BIO -->
 	<hr>
-	<div class="section-header">A R T I S T &nbsp; B I O</div>
+	<div class="section-header">ARTIST BIO</div>
 	<hr>
 
 	<div class="eamon"><img src="https://s3.amazonaws.com/eamonism/eamonpic.jpg" /></div>
 	<div class="fname">EAMON</div>
 	<div class="lname">MURPHY</div>
-	<div class="bio"> Eamon Murphy is an artist currently living and working at Dartmouth College in Hanover, New Hampshire. Primarily self-taught, Murphy has spent the last three years developing what scholars have dubbed “Eamonism”—a unique, stylistic synthesis of old-fashioned pen-and-pencil work and a tasteful dash of digital media. A champion of the belief that art deserves to be shared for a reasonable price, Eamon has made his body of completed works available for online consumption in the form of artisan posters. Yes, that’s right, an art career that began on the margins of fourth-grade social studies notebooks has—at last—arrived at your very screen. We invite you to join us as we continue this journey. Please, have a look around.</div>
+	<div class="bio"> Eamon Murphy is an artist currently living and working at Dartmouth College in Hanover, New Hampshire. Primarily self-taught, Murphy has spent the last three years developing what scholars have dubbed “Eamonism”—a unique, stylistic synthesis of old-fashioned pen-and-pencil work and a tasteful dash of digital media. A champion of the belief that art deserves to be shared for a reasonable price, Eamon has made his body of completed works available for online consumption. Yes, that’s right, an art career that began on the margins of fourth-grade social studies notebooks has—at last—arrived at your very screen. We invite you to join us as we continue this journey. Please, have a look around.</div>
 
 	<!-- CONTACT -->
 	<hr>
-	<div class="section-header">C O N T A C T</div>
+	<div class="section-header">CONTACT</div>
 	<hr>
-	<img src="https://s3.amazonaws.com/eamonism/email.png" id="logo" /><div class="email">eamonmurphy928@gmail.com</div><br>
-	<img src="https://s3.amazonaws.com/eamonism/phone.png" id="logo" /><div class="phone">203.249.7684</div>
+	<img src="https://s3.amazonaws.com/eamonism/email.png" id="logo" /><div class="email">eamonmurphy@gmail.com</div><br>
+	<img src="https://s3.amazonaws.com/eamonism/phone.png" id="logo" /><div class="phone">239.961.3399</div>
 
 	<div class="footer"><a href="http://www.jubil.co/">Jubil Co.</a></div>
 </body>
