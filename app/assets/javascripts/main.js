@@ -11,6 +11,8 @@ function changeImage() {
 
 var index;
 
+var images = ["https://s3.amazonaws.com/eamonism/port1.jpg",]
+
 // holds the titles of all the images
 var titles = ['Savannah of the Waning Gibbous - 12x18 inches', 'Augury - 12x16 inches', 'Castilla - 11x14 inches', 
 'Dream of Queen Meabh - 12x18 inches', 'Ichthyograph - 17x11 inches', 'Illuminette - 10x15 inches', "Mind's Eyedrops - 11x15 inches", 
@@ -26,7 +28,7 @@ function startLightBox(event) {
 	var modalImg = document.getElementById("img");
 	var captionText = titles[index];
     modal.style.display = "block";
-    modalImg.src = img.src;
+    modalImg.src = images[index];
 
     var caption = document.getElementById("caption");
     caption.innerHTML = captionText;
