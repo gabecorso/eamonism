@@ -12,9 +12,9 @@ function changeImage() {
 var index;
 
 // holds the titles of all the images
-var titles = ['Savannah of the Waning Gibbous - 12x18 inches', 'Augury - 12x16 inches', 'Castilla - 11x14 inches', 
-'Dream of Queen Meabh - 12x18 inches', 'Ichthyograph - 17x11 inches', 'Illuminette - 10x15 inches', "Mind's Eyedrops - 11x15 inches", 
-'Ornithograph - 12x16 inches', 'Ornithograph ii - 12x16 inches', 'Psyght - 11x14 inches', 'Rodentia - 18x12 inches', 'The Waters of Eschaton - 12x18 inches'];
+var titles = [ 'Augury - 12x16 inches', 'Castilla - 11x14 inches', 
+'Dream of Queen Meabh - 12x18 inches', 'Ornithograph ii - 12x16 inches', 'Ichthyograph - 17x11 inches', 'Illuminette - 10x15 inches', 'Rodentia - 18x12 inches', "Mind's Eyedrops - 11x15 inches", 
+'Ornithograph - 12x16 inches',  'Psyght - 11x14 inches',  'Savannah of the Waning Gibbous - 12x18 inches', 'The Waters of Eschaton - 12x18 inches'];
 
 function startLightBox(event) {
 	// Get the modal
