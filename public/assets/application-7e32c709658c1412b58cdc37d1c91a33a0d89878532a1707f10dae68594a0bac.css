@@ -1,0 +1,896 @@
+/* line 1, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@font-face {
+  font-family: GothamBold;
+  src: url("../GothamBold.otf");
+}
+/*******************************************************
+					LANDING PAGE
+*******************************************************/
+/* line 15, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.home-left {
+  float: left;
+}
+
+/* line 19, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.title {
+  font-size: 50px;
+  font-family: Lato;
+  margin: 275px 0 0 175px;
+}
+
+@-webkit-keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 85, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+#cf3 {
+  position: relative;
+  padding-top: 150px;
+  margin-bottom: 600px;
+}
+
+/* line 90, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+#cf3 img {
+  position: absolute;
+  right: 0;
+}
+
+/* line 95, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+#cf3 img.top {
+  -webkit-animation-name: cf3FadeInOut;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-direction: alternate;
+  -moz-animation-name: cf3FadeInOut;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-duration: 2s;
+  -moz-animation-direction: alternate;
+  -o-animation-name: cf3FadeInOut;
+  -o-animation-timing-function: ease-in;
+  -o-animation-iteration-count: 1;
+  -o-animation-duration: 2s;
+  -o-animation-direction: alternate;
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+
+/* line 121, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.dot {
+  margin: 15px 0 0 185px;
+}
+
+/* line 125, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.dot img {
+  padding-right: 20px;
+}
+
+/*******************************************************
+			    PORTFOLIO / PHOTO GRID
+*******************************************************/
+/* line 133, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+hr {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 141, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.wrap {
+  overflow: hidden;
+  margin-top: -2px;
+}
+
+/* line 146, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.box {
+  float: left;
+  position: relative;
+  width: 33.3%;
+  padding-bottom: 33.3%;
+}
+
+/* line 153, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.boxInner {
+  position: absolute;
+  width: 100%;
+}
+
+/* line 158, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.boxInner img {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* line 163, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  /* Smartphone view: 1 tile */
+  /* line 169, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .box {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+}
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+  /* Tablet view: 2 tiles */
+  /* line 177, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .box {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}
+@media only screen and (max-width: 1050px) and (min-width: 651px) {
+  /* Small desktop / ipad view: 3 tiles */
+  /* line 185, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .box {
+    width: 33.3%;
+    padding-bottom: 33.3%;
+  }
+}
+@media only screen and (max-width: 1290px) and (min-width: 1051px) {
+  /* Medium desktop: 4 tiles */
+  /* line 193, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .box {
+    width: 33.3%;
+    padding-bottom: 25%;
+  }
+}
+/*******************************************************
+					ARTIST BIO
+*******************************************************/
+/* line 202, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.eamon {
+  margin-top: 50px;
+  margin-left: 175px;
+  display: inline-block;
+  float: left;
+  padding-bottom: 50px;
+}
+
+/* line 210, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.fname {
+  position: absolute;
+  color: white;
+  font-family: GothamBold;
+  font-size: 40px;
+  padding-top: 60px;
+  padding-left: 380px;
+  text-shadow: 3px 3px 15px #000000;
+}
+
+/* line 220, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.lname {
+  color: black;
+  font-family: GothamBold;
+  font-size: 40px;
+  padding-top: 60px;
+}
+
+/* line 227, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.bio {
+  margin: 40px 150px 0 600px;
+  font-family: Lato;
+  font-size: 18px;
+}
+
+/*******************************************************
+					CONTACT
+*******************************************************/
+/* line 236, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+#logo {
+  padding-left: 175px;
+  padding-top: 40px;
+}
+
+/* line 241, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.email {
+  display: inline-block;
+  padding-left: 30px;
+  font-family: Lato;
+  font-size: 17px;
+  vertical-align: middle;
+  margin-top: -20px;
+}
+
+/* line 250, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.phone {
+  display: inline-block;
+  padding-left: 30px;
+  font-family: Lato;
+  font-size: 17px;
+  vertical-align: middle;
+  margin-top: -20px;
+}
+
+/* line 259, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.footer {
+  width: 100%;
+  background-color: black;
+  margin-top: 40px;
+  text-align: center;
+  font-family: Lato;
+  vertical-align: middle;
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+/* line 270, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/*******************************************************
+					MEDIA QUERIES
+*******************************************************/
+@media (min-width: 320px) {
+  /* line 280, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .section-header {
+    font-family: Lato;
+    font-size: 20px;
+    padding: 20px 0 20px 30px;
+  }
+
+  /* line 286, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon {
+    margin-top: 50px;
+    margin-left: 30px;
+    display: inline-block;
+    float: left;
+    padding-bottom: 0px;
+  }
+
+  /* line 294, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon img {
+    width: 270px;
+  }
+
+  /* line 298, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .fname {
+    position: absolute;
+    color: white;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 310px;
+    padding-left: 40px;
+    text-shadow: 3px 3px 15px #000000;
+  }
+
+  /* line 308, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .lname {
+    color: black;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-left: 40px;
+  }
+
+  /* line 315, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .bio {
+    margin: 20px 50px 0 30px;
+    font-family: Lato;
+    font-size: 16px;
+    clear: both;
+    padding-bottom: 40px;
+  }
+
+  /* line 323, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 {
+    position: relative;
+    padding-top: 150px;
+    margin-bottom: 250px;
+  }
+
+  /* line 329, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 img {
+    width: 250px;
+    padding-bottom: 100px;
+  }
+
+  /* line 334, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .title {
+    font-size: 25px;
+    font-family: Lato;
+    margin: 50px 0 0 30px;
+  }
+
+  /* line 340, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot {
+    margin: 15px 0 0 35px;
+  }
+
+  /* line 344, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #logo {
+    padding-left: 30px;
+  }
+}
+@media (min-width: 400px) {
+  /* line 351, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .section-header {
+    font-family: Lato;
+    font-size: 20px;
+    padding: 20px 0 20px 30px;
+  }
+
+  /* line 357, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon {
+    margin-top: 50px;
+    margin-left: 30px;
+    display: inline-block;
+    float: left;
+    padding-bottom: 0px;
+  }
+
+  /* line 365, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon img {
+    width: 300px;
+  }
+
+  /* line 369, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .fname {
+    position: absolute;
+    color: white;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 340px;
+    padding-left: 40px;
+    text-shadow: 3px 3px 15px #000000;
+  }
+
+  /* line 379, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .lname {
+    color: black;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-left: 40px;
+  }
+
+  /* line 386, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .bio {
+    margin: 20px 50px 0 30px;
+    font-family: Lato;
+    font-size: 16px;
+    clear: both;
+    padding-bottom: 40px;
+  }
+
+  /* line 394, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 {
+    position: relative;
+    padding-top: 150px;
+    margin-bottom: 250px;
+  }
+
+  /* line 400, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 img {
+    width: 250px;
+  }
+
+  /* line 404, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .title {
+    font-size: 25px;
+    font-family: Lato;
+    margin: 50px 0 0 30px;
+  }
+
+  /* line 410, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot {
+    margin: 15px 0 0 35px;
+  }
+
+  /* line 414, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #logo {
+    padding-left: 30px;
+  }
+}
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  /* line 421, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .section-header {
+    font-family: Lato;
+    font-size: 20px;
+    padding: 20px 0 20px 30px;
+  }
+
+  /* line 427, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon {
+    margin-top: 50px;
+    margin-left: 30px;
+    display: inline-block;
+    float: left;
+    padding-bottom: 20px;
+  }
+
+  /* line 435, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon img {
+    width: 300px;
+  }
+
+  /* line 439, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .fname {
+    position: absolute;
+    color: white;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+    padding-left: 160px;
+    text-shadow: 3px 3px 15px #000000;
+  }
+
+  /* line 449, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .lname {
+    color: black;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+  }
+
+  /* line 456, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .bio {
+    margin: 20px 100px 0 30px;
+    font-family: Lato;
+    font-size: 16px;
+    clear: both;
+    padding-bottom: 40px;
+  }
+
+  /* line 464, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 {
+    position: relative;
+    padding-top: 150px;
+    margin-bottom: 300px;
+  }
+
+  /* line 470, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 img {
+    width: 300px;
+  }
+
+  /* line 474, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .title {
+    font-size: 30px;
+    font-family: Lato;
+    margin: 200px 0 0 30px;
+  }
+
+  /* line 480, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot {
+    margin: 15px 0 0 35px;
+  }
+
+  /* line 484, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #logo {
+    padding-left: 30px;
+  }
+}
+/* Larger than tablet */
+@media (min-width: 750px) {
+  /* line 491, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .section-header {
+    font-family: Lato;
+    font-size: 22px;
+    padding: 20px 0 20px 100px;
+  }
+
+  /* line 497, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon {
+    margin-top: 50px;
+    margin-left: 100px;
+    display: inline-block;
+    float: left;
+    padding-bottom: 20px;
+  }
+
+  /* line 505, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon img {
+    width: 300px;
+  }
+
+  /* line 509, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .fname {
+    position: absolute;
+    color: white;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+    padding-left: 230px;
+    text-shadow: 3px 3px 15px #000000;
+  }
+
+  /* line 519, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .lname {
+    color: black;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+  }
+
+  /* line 526, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .bio {
+    margin: 20px 100px 0 100px;
+    font-family: Lato;
+    font-size: 16px;
+    clear: both;
+    padding-bottom: 40px;
+  }
+
+  /* line 534, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 {
+    position: relative;
+    padding-top: 150px;
+    margin-bottom: 400px;
+  }
+
+  /* line 540, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 img {
+    width: 400px;
+  }
+
+  /* line 544, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .title {
+    font-size: 40px;
+    font-family: Lato;
+    margin: 275px 0 0 100px;
+  }
+
+  /* line 550, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot {
+    margin: 15px 0 0 105px;
+  }
+
+  /* line 554, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #logo {
+    padding-left: 100px;
+  }
+}
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  /* line 561, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .bio {
+    margin: 20px 50px 0 600px;
+    font-family: Lato;
+    font-size: 16px;
+    clear: none;
+  }
+
+  /* line 568, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon {
+    margin-top: 50px;
+    margin-left: 175px;
+    display: inline-block;
+    float: left;
+    padding-bottom: 50px;
+  }
+
+  /* line 576, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon img {
+    width: 375px;
+  }
+
+  /* line 580, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .fname {
+    position: absolute;
+    color: white;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+    padding-left: 380px;
+    text-shadow: 3px 3px 15px #000000;
+  }
+
+  /* line 590, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .lname {
+    color: black;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+  }
+
+  /* line 597, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 {
+    position: relative;
+    padding-top: 150px;
+    margin-bottom: 500px;
+  }
+
+  /* line 603, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 img {
+    width: 450px;
+  }
+
+  /* line 607, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .home-left {
+    float: left;
+  }
+
+  /* line 611, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .title {
+    font-size: 50px;
+    font-family: Lato;
+    margin: 275px 0 0 175px;
+  }
+
+  /* line 617, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot {
+    margin: 15px 0 0 185px;
+  }
+
+  /* line 621, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot img {
+    padding-right: 20px;
+  }
+
+  /* line 625, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .section-header {
+    font-family: Lato;
+    font-size: 25px;
+    padding: 20px 0 20px 175px;
+  }
+
+  /* line 631, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #logo {
+    padding-left: 175px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 637, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 {
+    position: relative;
+    padding-top: 150px;
+    margin-bottom: 600px;
+  }
+
+  /* line 643, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 img {
+    position: absolute;
+    right: 0;
+    width: 600px;
+  }
+
+  /* line 649, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .home-left {
+    float: left;
+  }
+
+  /* line 653, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .title {
+    font-size: 50px;
+    font-family: Lato;
+    margin: 275px 0 0 175px;
+  }
+
+  /* line 659, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot {
+    margin: 15px 0 0 185px;
+  }
+
+  /* line 663, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot img {
+    padding-right: 20px;
+  }
+
+  /* line 667, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .bio {
+    margin: 40px 150px 0 600px;
+    font-family: Lato;
+    font-size: 18px;
+  }
+
+  /* line 673, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .fname {
+    position: absolute;
+    color: white;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+    padding-left: 380px;
+    text-shadow: 3px 3px 15px #000000;
+  }
+
+  /* line 683, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .lname {
+    color: black;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+  }
+}
+/*******************************************************
+					MODAL
+*******************************************************/
+/* line 694, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* line 700, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+/* line 703, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+/* line 718, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+/* line 726, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  padding-bottom: 50px;
+  height: 150px;
+  font-family: Lato;
+  font-size: 24px;
+}
+
+/* Add Animation */
+/* line 741, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* The Close Button */
+/* line 759, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* line 769, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  /* line 778, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .modal-content {
+    width: 100%;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
