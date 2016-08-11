@@ -11,6 +11,8 @@ Built on Rails, utilizing PayPal/OAuth integrations for accepting payments.
 
 * System dependencies
 >bundle install
+>
+>relies on paypal checkout integrations (https://developer.paypal.com/docs/api/)[https://developer.paypal.com/docs/api/]
 
 * Configuration
 >config.serve_static_assets = true
