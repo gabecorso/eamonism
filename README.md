@@ -1,7 +1,7 @@
 #Eamonism
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application serves as a portfolio and webstore for the art of Eamon Murphy.
+Built on Rails, utilizing PayPal/OAuth integrations for accepting payments.
 
 Things you may want to cover:
 
