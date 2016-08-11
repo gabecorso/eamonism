@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
 
-
+	protect_from_forgery except: [:hook]
 
 	def index
 	end
@@ -19,6 +19,8 @@ class WelcomeController < ApplicationController
 
 	def new
 	end
-	def complete 
+	def complete
+		@order = Order.new
+		redirect_to @order.paypal_url(root_path)
 	end
 end

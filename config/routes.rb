@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
 
 
-
+  post "/welcome" => "welcome#complete"
 
   #webhook
   post "/order/complete" => "order#complete"
