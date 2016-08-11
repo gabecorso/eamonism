@@ -23,7 +23,7 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
->git push origin <branch>
+>git push origin branch
 >
 >git push heroku master (to update production instance)
 
