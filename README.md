@@ -1,6 +1,7 @@
 #Eamonism
 
 This application serves as a portfolio and webstore for the art of Eamon Murphy.
+
 Built on Rails, utilizing PayPal/OAuth integrations for accepting payments.
 
 Things you may want to cover:
