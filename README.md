@@ -1,4 +1,4 @@
-== README
+#Eamonism
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
@@ -6,12 +6,15 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+>rvm use ruby-2.2.4
 
 * System dependencies
+>bundle install
 
 * Configuration
 
 * Database creation
+>open an instance of postgresql
 
 * Database initialization
 
@@ -20,9 +23,10 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+>git push origin <branch>
+>
+>git push heroku master (to update production instance)
 
 * ...
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
