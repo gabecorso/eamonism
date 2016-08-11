@@ -13,6 +13,7 @@ Built on Rails, utilizing PayPal/OAuth integrations for accepting payments.
 >bundle install
 
 * Configuration
+>config.serve_static_assets = true
 
 * Database creation
 >open an instance of postgresql
