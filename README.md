@@ -25,10 +25,16 @@ Built on Rails, utilizing PayPal/OAuth integrations for accepting payments.
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
->git push origin branch
+* Production Deployment instructions
+>`rake assets:precompile`
 >
->git push heroku master (to update production instance)
+>add and commit your changes, then `git push origin 'branch'`
+>
+>`git checkout master`
+>
+>`git merge 'branch'`
+>
+>`git push heroku master` (to update production instance)
 
 * ...
 
