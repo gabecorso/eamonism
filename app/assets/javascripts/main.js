@@ -42,6 +42,7 @@ function startLightBox(event) {
 	var img = document.getElementById(index);
 	var modalImg = document.getElementById("img");
 	var captionText = titles[index];
+	document.getElementById('item_name').value = titles[index];
     modal.style.display = "block";
     modalImg.src = images[index];
 
