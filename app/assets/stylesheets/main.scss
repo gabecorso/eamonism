@@ -148,6 +148,7 @@ hr {
    position: relative;
    width: 33.3%;
    padding-bottom: 33.3%;
+   overflow: hidden;
 }
 
 .boxInner {
@@ -158,6 +159,18 @@ hr {
 .boxInner img {
    width: 100%;
    cursor: pointer;
+   display: block;
+   margin: 0 auto;
+}
+
+.purchase-btn {
+	background: url(purchase.png) no-repeat;
+	background-size: 100px 30px;
+    cursor: pointer;
+    vertical-align: bottom;
+    border: none;
+    width: 100px;
+    height: 30px;
 }
 
 body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
@@ -720,25 +733,27 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     display: block;
     width: 80%;
     max-width: 700px;
+    padding-bottom: 200px;
 }
 
 /* Caption of Modal Image */
 #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
+    margin-left: 380px;
+    padding-bottom: 10px;
+    display: inline-block;
     color: #ccc;
-    padding: 10px 0;
-    padding-bottom: 50px;
-    height: 150px;
     font-family: Lato;
     font-size: 24px;
+    vertical-align: top;
+}
+
+.purchase {
+	display: inline-block;
+	margin-left: 20px;
 }
 
 /* Add Animation */
-.modal-content, #caption {    
+.modal-content, #caption, .purchase {    
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
