@@ -158,6 +158,18 @@ hr {
 .boxInner img {
    width: 100%;
    cursor: pointer;
+   display: block;
+   margin: 0 auto;
+}
+
+.purchase-btn {
+	background: url(purchase.png) no-repeat;
+	background-size: 100px 30px;
+    cursor: pointer;
+    vertical-align: bottom;
+    border: none;
+    width: 100px;
+    height: 30px;
 }
 
 body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
@@ -731,11 +743,12 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     color: #ccc;
     font-family: Lato;
     font-size: 24px;
+    vertical-align: top;
 }
 
 .purchase {
 	display: inline-block;
-	margin-left: 385px;
+	margin-left: 20px;
 }
 
 /* Add Animation */
