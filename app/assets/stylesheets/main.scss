@@ -171,6 +171,7 @@ hr {
     border: none;
     width: 100px;
     height: 30px;
+    display: none;
 }
 
 body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
