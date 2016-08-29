@@ -101,12 +101,14 @@
 
   	<div id="myModal" class="modal">
 		<span class="close">×</span>
-		<div id="caption"></div>
-		<form class="purchase" action="/welcome" method="post" accept-charset="utf-8">
-			<input type="hidden" name="item_name" id="item_name" value="">
-			<button class="purchase-btn" type="submit" value=""></button>
-		</form>
-		<img class="modal-content" id="img">
+		<div class="wrapModalImg">
+			<div id="caption"></div>
+			<form class="purchase" action="/welcome" method="post" accept-charset="utf-8">
+				<input type="hidden" name="item_name" id="item_name" value="">
+				<button class="purchase-btn" type="submit" value=""></button>
+			</form>
+			<img class="modal-content" id="img" />
+		</div>
 	</div>
 	<!-- /#wrap -->
 

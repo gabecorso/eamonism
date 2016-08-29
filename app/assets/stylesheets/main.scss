@@ -739,20 +739,24 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
+    width: 100%;
     max-width: 700px;
     padding-bottom: 200px;
 }
 
 /* Caption of Modal Image */
 #caption {
-    margin-left: 380px;
     padding-bottom: 10px;
     display: inline-block;
     color: #ccc;
     font-family: Lato;
     font-size: 24px;
     vertical-align: top;
+}
+
+.wrapModalImg {
+	max-width: 700px;
+	margin: 0 auto;
 }
 
 .purchase {
