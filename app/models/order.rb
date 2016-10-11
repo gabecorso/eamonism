@@ -5,12 +5,12 @@ class Order < ActiveRecord::Base
 	#build the paypal url receipt
 	def paypal_url(return_path, item_name)
         values = {
-            business: "eamonmurphy928-facilitator@gmail.com",
+            business: "eamonmurphy928@gmail.com",
             cmd: "_xclick",
             upload: 1,
             return: "#{Rails.application.secrets.app_host}/order/complete",
             invoice: id,
-            amount: 8,
+            amount: 9,
             item_name: item_name,
             item_number: 1,
             quantity: '1',
