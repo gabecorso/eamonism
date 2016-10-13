@@ -6,6 +6,8 @@ Built on Rails, utilizing PayPal/OAuth integrations for accepting payments.
 
 ##Getting Started
 
+`sudo bundle`
+
 * Ruby version
 >rvm use ruby-2.2.4
 
