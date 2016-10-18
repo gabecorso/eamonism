@@ -23,6 +23,11 @@ Built on Rails, utilizing PayPal/OAuth integrations for accepting payments.
 >open an instance of postgresql
 
 * Database initialization
+> rake db:create
+> 
+> rake db:migrate
+>
+> heroku run rake:db migrate
 
 * How to run the test suite
 * >rails s
