@@ -62,7 +62,7 @@ function startLightBox(event) {
 	    modal.style.display = "none";
 	}
 
-	model.onclick = function() {
+	modal.onclick = function() {
 		modal.style.display = "none";
 	}
 

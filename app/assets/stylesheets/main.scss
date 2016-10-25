@@ -6,7 +6,7 @@ html, body {
 
 @font-face {
     font-family: GothamBold;
-    src: url("../GothamBold.otf");
+    src: url('/assets/fonts/GothamBold.otf') format('otf');
 }
 
 /*******************************************************
@@ -164,7 +164,7 @@ hr {
 }
 
 .purchase-btn {
-	background: url(purchase.png) no-repeat;
+	background: image-url('purchase.png') no-repeat;
 	background-size: 100px 30px;
     cursor: pointer;
     vertical-align: bottom;
