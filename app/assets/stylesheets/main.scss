@@ -754,6 +754,16 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     vertical-align: top;
 }
 
+#price {
+    padding-bottom: 10px;
+    padding-left: 15px;
+    display: inline-block;
+    color: #ccc;
+    font-family: Lato;
+    font-size: 24px;
+    vertical-align: top;
+}
+
 .wrapModalImg {
 	max-width: 700px;
 	margin: 0 auto;
