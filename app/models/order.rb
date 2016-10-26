@@ -10,7 +10,7 @@ class Order < ActiveRecord::Base
             upload: 1,
             return: "#{Rails.application.secrets.app_host}/order/complete",
             invoice: id,
-            amount: 12,
+            amount: 15,
             shipping: 2.5,
             item_name: item_name,
             item_number: 1,
