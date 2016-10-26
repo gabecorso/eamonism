@@ -21,15 +21,20 @@ class OrderController < ApplicationController
 	def create
 		params.permit!
 		@order = Order.new
+		if params[:item_name]
+			
 
 		#build the order object from POST params
-		@order.contents = ""
-		@order.total = 0
-		@order.name = params[:name]
-		@order.email = params[:email]
-		@order.number = params[:number]
+			@order.contents = ""
+			@order.total = 2.5
+			@order.name = params[:name]
+			@order.email = params[:email]
+			@order.number = params[:number]
 		
-
+		end
+		if params[:discount]
+			@order.total = 0
+		end
 		#art params
 
 
