@@ -11,32 +11,40 @@ function changeImage() {
 
 var index;
 
-var images = ["https://s3.amazonaws.com/eamonism/Augury.jpg", 
+var images = [
+
+
+			  "https://s3.amazonaws.com/eamonism/Granadas.jpg",
+			  "https://s3.amazonaws.com/eamonism/Hunters.jpg",
+			  "https://s3.amazonaws.com/eamonism/Capragraph.jpg",
+
+			  "https://s3.amazonaws.com/eamonism/Augury.jpg",
 			  "https://s3.amazonaws.com/eamonism/Castilla.jpg", 
-			  "https://s3.amazonaws.com/eamonism/DreamofQueenMeabh.jpg", 
+			  "https://s3.amazonaws.com/eamonism/Illuminette.jpg",
 			  
-			  "https://s3.amazonaws.com/eamonism/Ornithograph.jpg", 
-			  "https://s3.amazonaws.com/eamonism/GildedFish.jpg", 
-			  "https://s3.amazonaws.com/eamonism/MindsEyedrops.jpg", 
 			  
 			  "https://s3.amazonaws.com/eamonism/Rodentia.jpg", 
 			  "https://s3.amazonaws.com/eamonism/Psyght.jpg",
-			  "https://s3.amazonaws.com/eamonism/Illuminette.jpg",
+			  "https://s3.amazonaws.com/eamonism/MindsEyedrops.jpg", 
 
 			  "https://s3.amazonaws.com/eamonism/port10.jpg",
 			  "https://s3.amazonaws.com/eamonism/port11.jpg",
 			  "https://s3.amazonaws.com/eamonism/port12.jpg",
 
-			  "https://s3.amazonaws.com/eamonism/Granadas.jpg",
-			  "https://s3.amazonaws.com/eamonism/Hunters.jpg",
-			  "https://s3.amazonaws.com/eamonism/Capragraph.jpg"
+			  
+			  "https://s3.amazonaws.com/eamonism/GildedFish.jpg", 
+
+			  "https://s3.amazonaws.com/eamonism/DreamofQueenMeabh.jpg", 
+
+			  
+			  "https://s3.amazonaws.com/eamonism/Ornithograph.jpg", 
 	      		]
 
 // holds the titles of all the images
-var titles = [ 'Augury - 12x16 inches', 'Castilla - 11x14 inches', 'Dream of Queen Meabh - 12x18 inches', 
-'Ornithograph - 12x16 inches', 'Ichthyograph - 17x11 inches',  "Mind's Eyedrops - 11x15 inches",
+var titles = [ 'Las Granadas - 11x17 inches', 'The Hunters - 11x15 inches', 'Capragraph - 11x14.5', 'Augury - 12x16 inches', 'Castilla - 11x14 inches',  
+   "Mind's Eyedrops - 11x15 inches",
 'Rodentia - 18x12 inches', 'Psyght - 11x14 inches', 'Illuminette - 10x15 inches',  
-'Ornithograph ii - 12x16 inches',  'Savannah of the Waning Gibbous - 12x18 inches', 'The Font of Eschaton - 12x18 inches', 'Las Granadas - 11x17 inches', 'The Hunters - 11x15 inches', 'Capragraph - 11x14.5'];
+'Ornithograph ii - 12x16 inches',  'Savannah of the Waning Gibbous - 12x18 inches', 'The Font of Eschaton - 12x18 inches', 'Ichthyograph - 17x11 inches', 'Dream of Queen Meabh - 12x18 inches', 'Ornithograph - 12x16 inches'];
 
 function startLightBox(event) {
 	// Get the modal
@@ -62,8 +70,5 @@ function startLightBox(event) {
 	    modal.style.display = "none";
 	}
 
-	modal.onclick = function() {
-		modal.style.display = "none";
-	}
-
+	
 }

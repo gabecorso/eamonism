@@ -19,8 +19,8 @@ class WelcomeController < ApplicationController
 		if params[:item_name]
 			item_name = params[:item_name]
 		end
-		if params[:discount_code] == "Dartmouth"
-			shipping = params[:discount_code]
+		if params[:discount_code] == "Dart1"
+			shipping = 0
 		end
 
 		redirect_to @order.paypal_url(root_path, item_name, shipping)
