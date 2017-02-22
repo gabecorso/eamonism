@@ -161,6 +161,9 @@ hr {
    cursor: pointer;
    display: block;
    margin: 0 auto;
+   -webkit-user-drag: none;
+  user-drag: none;
+
 }
 
 .purchase-btn {
