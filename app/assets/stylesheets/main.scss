@@ -162,7 +162,7 @@ hr {
    display: block;
    margin: 0 auto;
    -webkit-user-drag: none;
-  user-drag: none;
+   user-drag: none;
 
 }
 
@@ -748,6 +748,8 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     width: 100%;
     max-width: 700px;
     padding-bottom: 200px;
+    -webkit-user-drag: none;
+    user-drag: none;
 }
 
 /* Caption of Modal Image */
