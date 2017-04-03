@@ -22,7 +22,13 @@ class WelcomeController < ApplicationController
 		if params[:discount_code] == "Dart1"
 			shipping = 0
 		end
+		if params[:price_input]
+			price = params[:price_input]
+			if price == "8"
+				shipping = 0.98
+			end	
+		end
 
-		redirect_to @order.paypal_url(root_path, item_name, shipping)
+		redirect_to @order.paypal_url(root_path, item_name, shipping, price)
 	end
 end

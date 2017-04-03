@@ -3,14 +3,14 @@ class Order < ActiveRecord::Base
 
 	serialize :notification_params, Hash
 	#build the paypal url receipt
-	def paypal_url(return_path, item_name, shipping)
+	def paypal_url(return_path, item_name, shipping, price)
         values = {
             business: "eamonmurphy928@gmail.com",
             cmd: "_xclick",
             upload: 1,
             return: "#{Rails.application.secrets.app_host}/order/complete",
             invoice: id,
-            amount: 15,
+            amount: price,
             shipping: shipping,
             item_name: item_name,
             item_number: 1,
