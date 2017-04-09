@@ -23,8 +23,8 @@ var images = [
 			  "https://s3.amazonaws.com/eamonism/Illuminette.jpg",
 			  
 			  
-			  "https://s3.amazonaws.com/eamonism/Rodentia.jpg", 
-			  "https://s3.amazonaws.com/eamonism/Psyght.jpg",
+			  "https://s3.amazonaws.com/eamonism/GildedFish.jpg", 
+			  "https://s3.amazonaws.com/eamonism/Ornithograph.jpg",
 			  "https://s3.amazonaws.com/eamonism/MindsEyedrops.jpg", 
 
 			  "https://s3.amazonaws.com/eamonism/port10.jpg",
@@ -32,12 +32,12 @@ var images = [
 			  "https://s3.amazonaws.com/eamonism/port12.jpg",
 
 			  
-			  "https://s3.amazonaws.com/eamonism/GildedFish.jpg", 
+			  "https://s3.amazonaws.com/eamonism/Rodentia.jpg", 
 
 			  "https://s3.amazonaws.com/eamonism/DreamofQueenMeabh.jpg", 
 
 			  
-			  "https://s3.amazonaws.com/eamonism/Ornithograph.jpg",
+			  "https://s3.amazonaws.com/eamonism/Psyght.jpg",
 
 
 			  "https://s3.amazonaws.com/eamonism/birdSticker.png", 

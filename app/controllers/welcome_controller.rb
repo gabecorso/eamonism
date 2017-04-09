@@ -3,7 +3,7 @@ class WelcomeController < ApplicationController
 	protect_from_forgery except: [:hook]
 
 	def index
-		@birdTitle = "https://s3.amazonaws.com/eamonism/bigBirdThumb.jpg"
+		@birdTitle = "https://s3.amazonaws.com/eamonism/mdBirdThumb.jpg"
 	end
 
 	def create

@@ -151,6 +151,14 @@ hr {
    overflow: hidden;
 }
 
+.boxS {
+   float: left;
+   position: relative;
+   width: 50%;
+   padding-bottom: 50%;
+   overflow: hidden;
+}
+
 .boxInner {
    position: absolute;
    width: 100%;
