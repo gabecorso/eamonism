@@ -126,6 +126,25 @@ html, body {
 	padding-right: 20px;
 }
 
+.sizeChoice {
+	display: none;
+	position: absolute;
+   	
+   	padding-bottom: 50%;
+   	overflow: hidden;
+}
+
+.sizeHover:hover .sizeChoice{
+	display: block;
+} 
+
+.sizeHover {
+	:hover {
+		opacity: 0.8;
+		background-color: black;
+	}
+}
+
 /*******************************************************
 			    PORTFOLIO / PHOTO GRID
 *******************************************************/
@@ -219,6 +238,12 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
       width: 33.3%;
       padding-bottom: 25%;
    }
+}
+
+.sizes {
+	margin: 15px 150px 15px 50%;
+	font-family: Lato;
+	font-size: 20px;
 }
 
 /*******************************************************

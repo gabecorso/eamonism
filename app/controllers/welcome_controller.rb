@@ -25,7 +25,7 @@ class WelcomeController < ApplicationController
 		end
 		if params[:price_input]
 			price = params[:price_input]
-			if price == "8"
+			if price == "4" || price == "6"
 				shipping = 0.98
 			end	
 		end

@@ -41,14 +41,17 @@ var images = [
 
 
 			  "https://s3.amazonaws.com/eamonism/birdSticker.png", 
-			  "https://s3.amazonaws.com/eamonism/fishSticker.png",  
+			  "https://s3.amazonaws.com/eamonism/fishSticker.png",
+
+			  "https://s3.amazonaws.com/eamonism/birdSticker.png", 
+			  "https://s3.amazonaws.com/eamonism/fishSticker.png",    
 	      		]
 
 // holds the titles of all the images
 var titles = [ 'Las Granadas - 11x17 inches', 'The Hunters - 11x15 inches', 'Capragraph - 11x14.5', 'Augury - 12x16 inches', 'Castilla - 11x14 inches',  
    "Mind's Eyedrops - 11x15 inches",
 'Rodentia - 18x12 inches', 'Psyght - 11x14 inches', 'Illuminette - 10x15 inches',  
-'Ornithograph ii - 12x16 inches',  'Savannah of the Waning Gibbous - 12x18 inches', 'The Font of Eschaton - 12x18 inches', 'Ichthyograph - 17x11 inches', 'Dream of Queen Meabh - 12x18 inches', 'Ornithograph - 12x16 inches', 'Bird Sticker - 7x6.74 inches', 'Fish Sticker - 6.86x5.5 inches'];
+'Ornithograph ii - 12x16 inches',  'Savannah of the Waning Gibbous - 12x18 inches', 'The Font of Eschaton - 12x18 inches', 'Ichthyograph - 17x11 inches', 'Dream of Queen Meabh - 12x18 inches', 'Ornithograph - 12x16 inches', 'Large Bird Sticker - 7x6.74 inches', 'Large Fish Sticker - 6.86x5.5 inches', 'Small Bird Sticker - 4x3.86 inches', 'Small Fish Sticker - 4x3.22 inches'];
 
 function startLightBox(event) {
 	index = parseInt(event.target.id);
@@ -79,6 +82,33 @@ function startLightBox(event) {
 		    modal.style.display = "none";
 		}
 	}
+	else if(index < 17){	// Get the modal
+		var modal = document.getElementById('myModal');
+		
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+	    modal.style.display = "block";
+	    modalImg.src = images[index];
+
+	    var price = document.getElementById('price');
+	    price.innerHTML = "$6";
+	    document.getElementById('price_input').value = 6;
+
+	    var caption = document.getElementById("caption");
+	    caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		    modal.style.display = "none";
+		}
+	}
 	else{
 		var modal = document.getElementById('myModal');
 		
@@ -91,10 +121,10 @@ function startLightBox(event) {
 	    modal.style.display = "block";
 	    modalImg.src = images[index];
 	    var price = document.getElementById('price');
-	    price.innerHTML = "$8";
+	    price.innerHTML = "$4";
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
-	     document.getElementById('price_input').value = 8;
+	     document.getElementById('price_input').value = 4;
 
 		// Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close")[0];
