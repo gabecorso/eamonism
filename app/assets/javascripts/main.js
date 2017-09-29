@@ -56,7 +56,7 @@ var titles = [ 'Las Granadas - 11x17 inches', 'The Hunters - 11x15 inches', 'Cap
 
 				'Rodentia - 18x12 inches', 'Dream of Queen Meabh - 12x18 inches', 'Psyght - 11x14 inches',
 
-				'Prince of Prospero - 10.25x14.5 inches',
+				'Prince Prospero - 10.25x14.5 inches',
 
 				'Large Bird Sticker - 7x6.74 inches', 'Large Fish Sticker - 6.86x5.5 inches', 'Small Bird Sticker - 4x3.86 inches', 'Small Fish Sticker - 4x3.22 inches'];
 
@@ -75,7 +75,7 @@ function startLightBox(event) {
 	    modalImg.src = images[index];
 
 	    var price = document.getElementById('price');
-	    price.innerHTML = "$15";
+	    price.innerHTML = "$12";
 	    document.getElementById('price_input').value = 12;
 
 	    var caption = document.getElementById("caption");
