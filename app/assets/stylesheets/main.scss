@@ -280,6 +280,19 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	font-size: 18px;
 }
 
+a {
+text-decoration: none;
+}
+a:link {
+color: Black;
+}
+a:visited {
+color: Black;
+}
+a:hover {
+	color: SeaGreen;
+}
+
 /*******************************************************
 					CONTACT
 *******************************************************/
@@ -304,6 +317,16 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	font-size: 17px;
 	vertical-align: middle;
 	margin-top: -20px;
+}
+
+.insta {
+	display: inline-block;
+	padding-left: 30px;
+	font-family: Lato;
+	font-size: 17px;
+	vertical-align: middle;
+	margin-top: -40px;
+	text-decoration: none;
 }
 
 .footer {
