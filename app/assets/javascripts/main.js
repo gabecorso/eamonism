@@ -66,7 +66,7 @@ var titles = [  'The Hunters (1st Ed.) - 11x15 inches', 'Capragraph (1st Ed.) - 
 
 				 'The Font of Eschaton (2nd Ed.) - 12x18 inches', 'Ichthyograph (2nd Ed.) - 17x11 inches', 
 
-				 'Ornithograph ii (2nd Ed.) - 12x16 inches', 'Las Granadas (2nd Ed.) - 11x17 inches',
+				 'Ornithograph ii (3rd Ed.) - 12x16 inches', 'Las Granadas (2nd Ed.) - 11x17 inches',
 
 				 'Illuminette (2nd Ed.) - 10x15 inches', 'Prince Prospero (2nd Ed.) - 10.25x14.5 inches', 
 
@@ -89,6 +89,34 @@ function startLightBox(event) {
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$20";
 	    document.getElementById('price_input').value = 20;
+
+	    var caption = document.getElementById("caption");
+	    caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		    modal.style.display = "none";
+		}
+	}
+
+	else if(index == 12){	// Get the modal
+		var modal = document.getElementById('myModal');
+		
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+	    modal.style.display = "block";
+	    modalImg.src = images[index];
+
+	    var price = document.getElementById('price');
+	    price.innerHTML = "$35";
+	    document.getElementById('price_input').value = 35;
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
