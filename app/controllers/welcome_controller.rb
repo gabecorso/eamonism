@@ -15,7 +15,7 @@ class WelcomeController < ApplicationController
 	def complete
 		@order = Order.new
 
-		shipping = 2.5
+		shipping = 4.39
 
 		if params[:item_name]
 			item_name = params[:item_name]
