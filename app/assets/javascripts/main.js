@@ -13,7 +13,8 @@ var index;
 
 var images = [
 
-
+				
+			  "https://s3.amazonaws.com/eamonism/Capragraph2.jpg",
 			  
 			  "https://s3.amazonaws.com/eamonism/Hunters.jpg",
 			  "https://s3.amazonaws.com/eamonism/Capragraph.jpg",
@@ -44,7 +45,6 @@ var images = [
 			  "https://s3.amazonaws.com/eamonism/Illuminette.jpg",
 			  "https://s3.amazonaws.com/eamonism/Prospero.jpg",
 
-			  "https://s3.amazonaws.com/eamonism/Capragraph2.jpg",
 
 			  "https://s3.amazonaws.com/eamonism/birdSticker.png", 
 			  "https://s3.amazonaws.com/eamonism/fishSticker.png",
@@ -54,7 +54,7 @@ var images = [
 	      		]
 
 // holds the titles of all the images
-var titles = [  'The Hunters (1st Ed.) - 11x15 inches', 'Capragraph (1st Ed.) - 11x14.5',
+var titles = [  'Capragraph II (1st. Ed.) - 11x14.5 inches', 'The Hunters (1st Ed.) - 11x15 inches', 'Capragraph (1st Ed.) - 11x14.5',
 
 				'Augury (1st Ed.) - 12x16 inches', 'Castilla (1st Ed.) - 11x14 inches', 
 
@@ -72,13 +72,13 @@ var titles = [  'The Hunters (1st Ed.) - 11x15 inches', 'Capragraph (1st Ed.) - 
 
 				 'Illuminette (2nd Ed.) - 10x15 inches', 'Prince Prospero (2nd Ed.) - 10.25x14.5 inches',
 
-				 'Capragraph II (1st. Ed.) - 11x14.5 inches', 
+				 
 
 				'Large Bird Sticker - 7x6.74 inches', 'Large Fish Sticker - 6.86x5.5 inches', 'Small Bird Sticker - 4x3.86 inches', 'Small Fish Sticker - 4x3.22 inches'];
 
 function startLightBox(event) {
 	index = parseInt(event.target.id);
-	if(index < 9){	// Get the modal
+	if(index < 9 && index !=0) {	// Get the modal
 		var modal = document.getElementById('myModal');
 		
 
@@ -106,7 +106,7 @@ function startLightBox(event) {
 		}
 	}
 
-	else if(index == 12 || index == 16){	// Get the modal
+	else if(index == 12 || index == 0){	// Get the modal
 		var modal = document.getElementById('myModal');
 		
 
