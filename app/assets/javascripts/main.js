@@ -68,11 +68,11 @@ var titles = [  'The Hunters (1st Ed.) - 11x15 inches', 'Capragraph (1st Ed.) - 
 
 				 'The Font of Eschaton (2nd Ed.) - 12x18 inches', 'Ichthyograph (2nd Ed.) - 17x11 inches', 
 
-				 'Ornithograph ii (3rd Ed.) - 12x16 inches', 'Las Granadas (2nd Ed.) - 11x17 inches',
+				 'Ornithograph II (3rd Ed.) - 12x16 inches', 'Las Granadas (2nd Ed.) - 11x17 inches',
 
 				 'Illuminette (2nd Ed.) - 10x15 inches', 'Prince Prospero (2nd Ed.) - 10.25x14.5 inches',
 
-				 'Capragraph ii (1st. Ed.) - 11x14.5 inches', 
+				 'Capragraph II (1st. Ed.) - 11x14.5 inches', 
 
 				'Large Bird Sticker - 7x6.74 inches', 'Large Fish Sticker - 6.86x5.5 inches', 'Small Bird Sticker - 4x3.86 inches', 'Small Fish Sticker - 4x3.22 inches'];
 
