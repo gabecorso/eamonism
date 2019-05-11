@@ -44,6 +44,8 @@ var images = [
 			  "https://s3.amazonaws.com/eamonism/Illuminette.jpg",
 			  "https://s3.amazonaws.com/eamonism/Prospero.jpg",
 
+			  "https://s3.amazonaws.com/eamonism/Capragraph2.jpg",
+
 			  "https://s3.amazonaws.com/eamonism/birdSticker.png", 
 			  "https://s3.amazonaws.com/eamonism/fishSticker.png",
 
@@ -68,7 +70,9 @@ var titles = [  'The Hunters (1st Ed.) - 11x15 inches', 'Capragraph (1st Ed.) - 
 
 				 'Ornithograph ii (3rd Ed.) - 12x16 inches', 'Las Granadas (2nd Ed.) - 11x17 inches',
 
-				 'Illuminette (2nd Ed.) - 10x15 inches', 'Prince Prospero (2nd Ed.) - 10.25x14.5 inches', 
+				 'Illuminette (2nd Ed.) - 10x15 inches', 'Prince Prospero (2nd Ed.) - 10.25x14.5 inches',
+
+				 'Capragraph ii (1st. Ed.) - 11x14.5 inches', 
 
 				'Large Bird Sticker - 7x6.74 inches', 'Large Fish Sticker - 6.86x5.5 inches', 'Small Bird Sticker - 4x3.86 inches', 'Small Fish Sticker - 4x3.22 inches'];
 
@@ -102,7 +106,7 @@ function startLightBox(event) {
 		}
 	}
 
-	else if(index == 12){	// Get the modal
+	else if(index == 12 || index == 16){	// Get the modal
 		var modal = document.getElementById('myModal');
 		
 
@@ -130,7 +134,7 @@ function startLightBox(event) {
 		}
 	}
 	
-	else if(index < 16){	// Get the modal
+	else if(index < 17){	// Get the modal
 		var modal = document.getElementById('myModal');
 		
 
@@ -161,7 +165,7 @@ function startLightBox(event) {
 
 
 
-	else if(index < 18){	// Get the modal
+	else if(index < 19){	// Get the modal
 		var modal = document.getElementById('myModal');
 		
 
