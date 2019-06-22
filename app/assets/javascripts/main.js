@@ -12,10 +12,10 @@ function changeImage() {
 var index;
 
 var images = [
-
-				"https://eamonism.s3.amazonaws.com/Images+for+site+6-4-19/Vision-of-a-Dying-Crab-II----compressed-for-site-6-4-19.jpg",
-				"https://eamonism.s3.amazonaws.com/Images+for+site+6-4-19/Crab----compressed-for-site-6-4-19.jpg",
+				
 				"https://eamonism.s3.amazonaws.com/Images+for+site+6-4-19/Vision-of-a-Dying-Crab----compressed-for-site-6-4-19.jpg",
+				"https://eamonism.s3.amazonaws.com/Images+for+site+6-4-19/Vision-of-a-Dying-Crab-II----compressed-for-site-6-4-19.jpg",
+				"https://eamonism.s3.amazonaws.com/Images+for+site+6-4-19/crab-drawing----IG-version----8.5x5-6-16-19.jpg",
 				"https://eamonism.s3.amazonaws.com/Images+for+site+6-4-19/The-Botany-Cipher-compressed-for-site-6-4-19.jpg",
 
 			  "https://s3.amazonaws.com/eamonism/Capragraph2.jpg",
@@ -58,7 +58,7 @@ var images = [
 	      		]
 
 // holds the titles of all the images
-var titles = [  'Vision of a Dying Crab II (1st Ed.) - 11.25x13.75 inches', 'Crab (1st Ed.) - 11.5x8.5 inches', 'Vision of a Dying Crab (1st Ed.) - 11.25x13.75 inches', 
+var titles = [  'Vision of a Dying Crab (1st Ed.) - 11.25x13.75 inches', 'Vision of a Dying Crab II (1st Ed.) - 11.25x13.75 inches', 'Crab (1st Ed.) - 11.5x8.5 inches',  
 
 				'The Botany Cipher (1st Ed.) - 8.5x11.5 inches', 'Capragraph II (1st. Ed.) - 10x13.5 inches', 'The Hunters (1st Ed.) - 11x15 inches', 
 
@@ -98,8 +98,8 @@ function startLightBox(event) {
 	    modalImg.src = images[index];
 
 	    var price = document.getElementById('price');
-	    price.innerHTML = "$115";
-	    document.getElementById('price_input').value = 115;
+	    price.innerHTML = "$110";
+	    document.getElementById('price_input').value = 110;
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -126,8 +126,8 @@ function startLightBox(event) {
 	    modalImg.src = images[index];
 
 	    var price = document.getElementById('price');
-	    price.innerHTML = "$50";
-	    document.getElementById('price_input').value = 50;
+	    price.innerHTML = "$120";
+	    document.getElementById('price_input').value = 120;
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -154,8 +154,8 @@ function startLightBox(event) {
 	    modalImg.src = images[index];
 
 	    var price = document.getElementById('price');
-	    price.innerHTML = "$100";
-	    document.getElementById('price_input').value = 100;
+	    price.innerHTML = "$50";
+	    document.getElementById('price_input').value = 50;
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -196,6 +196,33 @@ function startLightBox(event) {
 		    modal.style.display = "none";
 		}
 	}
+	else if(index == 5) {	// Get the modal
+		var modal = document.getElementById('myModal');
+		
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+	    modal.style.display = "block";
+	    modalImg.src = images[index];
+
+	    var price = document.getElementById('price');
+	    price.innerHTML = "$60";
+	    document.getElementById('price_input').value = 60;
+
+	    var caption = document.getElementById("caption");
+	    caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		    modal.style.display = "none";
+		}
+	}
 
 	else if(index < 6) {	// Get the modal
 		var modal = document.getElementById('myModal');
@@ -210,8 +237,8 @@ function startLightBox(event) {
 	    modalImg.src = images[index];
 
 	    var price = document.getElementById('price');
-	    price.innerHTML = "$50";
-	    document.getElementById('price_input').value = 50;
+	    price.innerHTML = "$60";
+	    document.getElementById('price_input').value = 60;
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -225,8 +252,7 @@ function startLightBox(event) {
 		}
 	}
 
-
-	else if(index < 15) {	// Get the modal
+	else if(index == 8) {	// Get the modal
 		var modal = document.getElementById('myModal');
 		
 
@@ -254,6 +280,118 @@ function startLightBox(event) {
 		}
 	}
 
+	else if(index == 10) {	// Get the modal
+		var modal = document.getElementById('myModal');
+		
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+	    modal.style.display = "block";
+	    modalImg.src = images[index];
+
+	    var price = document.getElementById('price');
+	    price.innerHTML = "$45";
+	    document.getElementById('price_input').value = 45;
+
+	    var caption = document.getElementById("caption");
+	    caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		    modal.style.display = "none";
+		}
+	}
+
+	else if(index == 11) {	// Get the modal
+		var modal = document.getElementById('myModal');
+		
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+	    modal.style.display = "block";
+	    modalImg.src = images[index];
+
+	    var price = document.getElementById('price');
+	    price.innerHTML = "$45";
+	    document.getElementById('price_input').value = 45;
+
+	    var caption = document.getElementById("caption");
+	    caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		    modal.style.display = "none";
+		}
+	}
+
+	else if(index == 13) {	// Get the modal
+		var modal = document.getElementById('myModal');
+		
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+	    modal.style.display = "block";
+	    modalImg.src = images[index];
+
+	    var price = document.getElementById('price');
+	    price.innerHTML = "$45";
+	    document.getElementById('price_input').value = 45;
+
+	    var caption = document.getElementById("caption");
+	    caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		    modal.style.display = "none";
+		}
+	}
+
+	else if(index < 15) {	// Get the modal
+		var modal = document.getElementById('myModal');
+		
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+	    modal.style.display = "block";
+	    modalImg.src = images[index];
+
+	    var price = document.getElementById('price');
+	    price.innerHTML = "$50";
+	    document.getElementById('price_input').value = 50;
+
+	    var caption = document.getElementById("caption");
+	    caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		    modal.style.display = "none";
+		}
+	}
+
 	else if(index == 15){	// Get the modal
 		var modal = document.getElementById('myModal');
 		
@@ -267,8 +405,8 @@ function startLightBox(event) {
 	    modalImg.src = images[index];
 
 	    var price = document.getElementById('price');
-	    price.innerHTML = "$85";
-	    document.getElementById('price_input').value = 85;
+	    price.innerHTML = "$90";
+	    document.getElementById('price_input').value = 90;
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -282,6 +420,34 @@ function startLightBox(event) {
 		}
 	}
 	
+	else if(index == 17){	// Get the modal
+		var modal = document.getElementById('myModal');
+		
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+	    modal.style.display = "block";
+	    modalImg.src = images[index];
+
+	    var price = document.getElementById('price');
+	    price.innerHTML = "$60";
+	    document.getElementById('price_input').value = 60;
+
+	    var caption = document.getElementById("caption");
+	    caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		    modal.style.display = "none";
+		}
+	}
+
 	else if(index < 20){	// Get the modal
 		var modal = document.getElementById('myModal');
 		
@@ -323,8 +489,8 @@ function startLightBox(event) {
 	    modalImg.src = images[index];
 
 	    var price = document.getElementById('price');
-	    price.innerHTML = "$65";
-	    document.getElementById('price_input').value = 65;
+	    price.innerHTML = "$90";
+	    document.getElementById('price_input').value = 90;
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
