@@ -58,7 +58,8 @@ var images = [
 
 
 			  "https://eamonism.s3.amazonaws.com/At-The-Gates-of-Paradise--10.5x13.5----Compressed-for-Site.jpg",
-			  "https://eamonism.s3.amazonaws.com/Minotaur-in-the-Labyrinth--compressed-for-site.jpg"
+			  "https://eamonism.s3.amazonaws.com/Minotaur-in-the-Labyrinth--compressed-for-site.jpg",
+			  "https://eamonism.s3.amazonaws.com/pomegranate-metamorphosis-compressed-for-web.jpg"
 	      		]
 
 // holds the titles of all the images
@@ -86,8 +87,9 @@ var titles = [  'Vision of a Dying Crab (1st Ed.) - 11.25x13.75 inches', 'Vision
 
 				'Large Bird Sticker - 7x6.74 inches', 'Large Fish Sticker - 6.86x5.5 inches', 'Small Bird Sticker - 4x3.86 inches', 'Small Fish Sticker - 4x3.22 inches',
 
-				 'At the Gates of Paradise (1st Ed.) - 10.5x13.5in',
-				 'Minotaur in the Labyrinth - 10.5x13.5in'
+				 'At the Gates of Paradise (1st Ed.) - 10.5x13.5 inches',
+				 'Minotaur in the Labyrinth - 10.5x13.5 inches',
+					'Metamorphosis of Pomegranate and Pocketwatch - 10.5x14.5 inches'
 
 				];
 
@@ -599,6 +601,33 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+		}
+	}
+	else if(index == 27) {	// Get the modal
+		var modal = document.getElementById('myModal');
+
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+		modal.style.display = "block";
+		modalImg.src = images[index];
+
+		var price = document.getElementById('price');
+		price.innerHTML = "$85 - Inquire for custom sizing";
+		document.getElementById('price_input').value = 85;
+
+		var caption = document.getElementById("caption");
+		caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
 		}
 	}
 
