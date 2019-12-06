@@ -679,7 +679,7 @@ function startLightBox(event) {
 		modalImg.src = images[index];
 
 		var price = document.getElementById('price');
-		price.innerHTML = "$85 (8x10s | 9x12s -- $75 | $80 -- available upon request)";
+		price.innerHTML = "$85 - (8x10s | 9x12s - $75 | $80 - available upon request)";
 		document.getElementById('price_input').value = 85;
 
 		//populate the drop down with variants
