@@ -59,37 +59,46 @@ var images = [
 
 			  "https://eamonism.s3.amazonaws.com/At-The-Gates-of-Paradise--10.5x13.5----Compressed-for-Site.jpg",
 			  "https://eamonism.s3.amazonaws.com/Minotaur-in-the-Labyrinth--compressed-for-site.jpg",
-			  "https://eamonism.s3.amazonaws.com/pomegranate-metamorphosis-compressed-for-web.jpg"
+
+			  "https://eamonism.s3.amazonaws.com/pomegranate-metamorphosis-compressed-for-web.jpg",
+			  'https://eamonism.s3.amazonaws.com/At-The-Gates-of-Paradise-II----11x15----Compressed-for-site.jpg',
+					'https://eamonism.s3.amazonaws.com/Bird-to-Whistle-on-9x12----compressed.jpg'
 	      		]
 
 // holds the titles of all the images
-var titles = [  'Vision of a Dying Crab (1st Ed.) - 11.25x13.75 inches', 'Vision of a Dying Crab II (1st Ed.) - 11.25x13.75 inches', 'Crab (1st Ed.) - 11.5x8.5 inches',  
+var titles = [  'Vision of a Dying Crab (1st Ed.) - 11x14 inches', 'Vision of a Dying Crab II (1st Ed.) - 11x14 inches', 'Crab (1st Ed.) - 12x9 inches',  
 
-				'The Botany Cipher (1st Ed.) - 8.5x11.5 inches', 'Capragraph II (1st. Ed.) - 10x13.5 inches', 'The Hunters (1st Ed.) - 11x15 inches', 
+				'The Botany Cipher (1st Ed.) - 9x12 inches', 'Capragraph II (1st. Ed.) - 10x14 inches', 'The Hunters (1st Ed.) - 11x15 inches', 
 
-				'Capragraph (1st Ed.) - 11x14.5', 'Augury (1st Ed.) - 12x16 inches', 'Castilla (1st Ed.) - 11x14 inches', 
+				'Capragraph (1st Ed.) - 11x15', 'Augury (1st Ed.) - 12x16 inches', 'Castilla (1st Ed.) - 11x14 inches', 
 
 				  "Mind's Eyedrops (1st Ed.) - 11x15 inches",
 
-				  'Savannah of the Waning Gibbous (1st Ed.) - 8.5x11.5 inches', 
+				  'Savannah of the Waning Gibbous (1st Ed.) - 9x12 inches', 
 
-				'Rodentia (1st Ed.) - 18x12 inches', 'Dream of Queen Meabh (1st Ed.) - 8.5x11.5 inches', 'Psyght (1st Ed.) - 11x14 inches',
+				'Rodentia (1st Ed.) - 18x12 inches', 'Dream of Queen Meabh (1st Ed.) - 9x12 inches', 'Psyght (1st Ed.) - 11x14 inches',
 
 				 'Ornithograph (2nd Ed.) - 12x16 inches', 
 
-				 'The Font of Eschaton (2nd Ed.) - 10.5x14.5 inches', 'Ichthyograph (2nd Ed.) - 8x8 inches', 
+				 'The Font of Eschaton (2nd Ed.) - 11x15 inches', 'Ichthyograph (2nd Ed.) - 8x8 inches', 
 
 				 'Ornithograph II (3rd Ed.) - 12x16 inches', 'Las Granadas (2nd Ed.) - 11x17 inches',
 
-				 'Illuminette (2nd Ed.) - 8.5x11.5 inches', 'Prince Prospero (2nd Ed.) - 10.25x14.5 inches',
+				 'Illuminette (2nd Ed.) - 9x12 inches', 'Prince Prospero (2nd Ed.) - 11x15 inches',
 
 				 
 
 				'Large Bird Sticker - 7x6.74 inches', 'Large Fish Sticker - 6.86x5.5 inches', 'Small Bird Sticker - 4x3.86 inches', 'Small Fish Sticker - 4x3.22 inches',
 
-				 'At the Gates of Paradise (1st Ed.) - 10.5x13.5 inches',
-				 'Minotaur in the Labyrinth - 10.5x13.5 inches',
-					'Metamorphosis of Pomegranate and Pocketwatch - 10.5x14.5 inches'
+				 'At the Gates of Paradise (1st Ed.) - 11x14 inches',
+				 'Minotaur in the Labyrinth - 11x14 inches',
+					'Metamorphosis of Pomegranate and Pocketwatch - 8x10 inches',
+
+					'At the Gates of Paradise II - 11x15 inches',
+
+					'Bird-Whistle Metamorphosis - 11x15 inches'
+
+				
 
 				];
 
@@ -561,8 +570,8 @@ function startLightBox(event) {
 	    modalImg.src = images[index];
 
 	    var price = document.getElementById('price');
-	    price.innerHTML = "$120 - Inquire for custom sizing";
-	    document.getElementById('price_input').value = 120;
+	    price.innerHTML = "$90 - Inquire for custom sizing";
+	    document.getElementById('price_input').value = 90;
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -616,8 +625,64 @@ function startLightBox(event) {
 		modalImg.src = images[index];
 
 		var price = document.getElementById('price');
-		price.innerHTML = "$85 - Inquire for custom sizing";
+		price.innerHTML = "$85 - (8x10s -- $75 -- available upon request)";
 		document.getElementById('price_input').value = 85;
+
+		var caption = document.getElementById("caption");
+		caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+	}
+	else if(index == 28) {	// Get the modal
+		var modal = document.getElementById('myModal');
+
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+		modal.style.display = "block";
+		modalImg.src = images[index];
+
+		var price = document.getElementById('price');
+		price.innerHTML = "$100 - Inquire for custom sizing";
+		document.getElementById('price_input').value = 100;
+
+		var caption = document.getElementById("caption");
+		caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+	}
+	else if(index == 29) {	// Get the modal
+		var modal = document.getElementById('myModal');
+
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+		modal.style.display = "block";
+		modalImg.src = images[index];
+
+		var price = document.getElementById('price');
+		price.innerHTML = "$85 (8x10s | 9x12s -- $75 | $80 -- available upon request)";
+		document.getElementById('price_input').value = 85;
+
+		//populate the drop down with variants
 
 		var caption = document.getElementById("caption");
 		caption.innerHTML = captionText;
