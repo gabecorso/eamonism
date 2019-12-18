@@ -1,0 +1,1068 @@
+/* line 1, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@font-face {
+  font-family: GothamBold;
+  src: url("/assets/fonts/GothamBold.otf") format("otf");
+}
+/*******************************************************
+					LANDING PAGE
+*******************************************************/
+/* line 15, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.home-left {
+  float: left;
+}
+
+/* line 19, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.title {
+  font-size: 50px;
+  font-family: Lato;
+  margin: 275px 0 0 175px;
+}
+
+@-webkit-keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 85, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+#cf3 {
+  position: relative;
+  padding-top: 150px;
+  margin-bottom: 600px;
+}
+
+/* line 90, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+#cf3 img {
+  position: absolute;
+  right: 0;
+}
+
+/* line 95, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+#cf3 img.top {
+  -webkit-animation-name: cf3FadeInOut;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-direction: alternate;
+  -moz-animation-name: cf3FadeInOut;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-duration: 2s;
+  -moz-animation-direction: alternate;
+  -o-animation-name: cf3FadeInOut;
+  -o-animation-timing-function: ease-in;
+  -o-animation-iteration-count: 1;
+  -o-animation-duration: 2s;
+  -o-animation-direction: alternate;
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+
+/* line 121, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.dot {
+  margin: 15px 0 0 185px;
+}
+
+/* line 125, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.dot img {
+  padding-right: 20px;
+}
+
+/* line 129, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.sizeChoice {
+  display: none;
+  position: absolute;
+  padding-bottom: 50%;
+  overflow: hidden;
+}
+
+/* line 137, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.sizeHover:hover .sizeChoice {
+  display: block;
+}
+
+/* line 142, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.sizeHover :hover {
+  opacity: 0.8;
+  background-color: black;
+}
+
+/*******************************************************
+			    PORTFOLIO / PHOTO GRID
+*******************************************************/
+/* line 152, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+hr {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 160, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.wrap {
+  overflow: hidden;
+  margin-top: -2px;
+}
+
+/* line 165, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.box {
+  float: left;
+  position: relative;
+  width: 33.3%;
+  padding-bottom: 33.3%;
+  overflow: hidden;
+}
+
+/* line 173, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.boxS {
+  float: left;
+  position: relative;
+  width: 50%;
+  padding-bottom: 50%;
+  overflow: hidden;
+}
+
+/* line 181, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.boxInner {
+  position: absolute;
+  width: 100%;
+}
+
+/* line 186, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.boxInner img {
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+/* line 196, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.purchase-btn {
+  background: url(/assets/purchase-5d008031edf40e09d0874e442ba78362ab701e0fc7d7c12ddb856d419c29557b.png) no-repeat;
+  background-size: 100px 30px;
+  cursor: pointer;
+  vertical-align: bottom;
+  border: none;
+  width: 100px;
+  height: 30px;
+}
+
+/* line 207, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  /* Smartphone view: 1 tile */
+  /* line 213, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .box {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+}
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+  /* Tablet view: 2 tiles */
+  /* line 221, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .box {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}
+@media only screen and (max-width: 1050px) and (min-width: 651px) {
+  /* Small desktop / ipad view: 3 tiles */
+  /* line 229, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .box {
+    width: 33.3%;
+    padding-bottom: 33.3%;
+  }
+}
+@media only screen and (max-width: 1290px) and (min-width: 1051px) {
+  /* Medium desktop: 4 tiles */
+  /* line 237, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .box {
+    width: 33.3%;
+    padding-bottom: 25%;
+  }
+}
+/* line 243, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.sizes {
+  margin: 15px 150px 15px 50%;
+  font-family: Lato;
+  font-size: 20px;
+}
+
+/*******************************************************
+					ARTIST BIO
+*******************************************************/
+/* line 252, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.eamon {
+  margin-top: 50px;
+  margin-left: 175px;
+  display: inline-block;
+  float: left;
+  padding-bottom: 50px;
+}
+
+/* line 260, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.fname {
+  position: absolute;
+  color: white;
+  font-family: GothamBold;
+  font-size: 40px;
+  padding-top: 60px;
+  padding-left: 380px;
+  text-shadow: 3px 3px 15px #000000;
+}
+
+/* line 270, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.lname {
+  color: black;
+  font-family: GothamBold;
+  font-size: 40px;
+  padding-top: 60px;
+}
+
+/* line 277, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.bio {
+  margin: 40px 150px 0 600px;
+  font-family: Lato;
+  font-size: 18px;
+}
+
+/* line 283, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 286, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+a:link {
+  color: Black;
+}
+
+/* line 289, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+a:visited {
+  color: Black;
+}
+
+/* line 292, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+a:hover {
+  color: SeaGreen;
+}
+
+/*******************************************************
+					CONTACT
+*******************************************************/
+/* line 299, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+#logo {
+  padding-left: 175px;
+  padding-top: 40px;
+}
+
+/* line 304, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.email {
+  display: inline-block;
+  padding-left: 30px;
+  font-family: Lato;
+  font-size: 17px;
+  vertical-align: middle;
+  margin-top: -20px;
+}
+
+/* line 313, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.phone {
+  display: inline-block;
+  padding-left: 30px;
+  font-family: Lato;
+  font-size: 17px;
+  vertical-align: middle;
+  margin-top: -20px;
+}
+
+/* line 322, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.insta {
+  display: inline-block;
+  padding-left: 30px;
+  font-family: Lato;
+  font-size: 17px;
+  vertical-align: middle;
+  margin-top: -40px;
+  text-decoration: none;
+}
+
+/* line 332, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.footer {
+  width: 100%;
+  background-color: black;
+  margin-top: 40px;
+  text-align: center;
+  font-family: Lato;
+  vertical-align: middle;
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+/* line 343, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/*******************************************************
+					MEDIA QUERIES
+*******************************************************/
+@media (min-width: 320px) {
+  /* line 353, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .section-header {
+    font-family: Lato;
+    font-size: 20px;
+    padding: 20px 0 20px 30px;
+  }
+
+  /* line 359, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .contact-details {
+    font-family: Lato;
+    font-size: 17px;
+    padding: 20px 0 20px 30px;
+    text-align: center;
+  }
+
+  /* line 366, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon {
+    margin-top: 50px;
+    margin-left: 30px;
+    display: inline-block;
+    float: left;
+    padding-bottom: 0px;
+  }
+
+  /* line 374, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon img {
+    width: 270px;
+  }
+
+  /* line 378, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .fname {
+    position: absolute;
+    color: white;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 310px;
+    padding-left: 40px;
+    text-shadow: 3px 3px 15px #000000;
+  }
+
+  /* line 388, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .lname {
+    color: black;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-left: 40px;
+  }
+
+  /* line 395, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .bio {
+    margin: 20px 50px 0 30px;
+    font-family: Lato;
+    font-size: 16px;
+    clear: both;
+    padding-bottom: 40px;
+  }
+
+  /* line 403, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 {
+    position: relative;
+    padding-top: 150px;
+    margin-bottom: 250px;
+  }
+
+  /* line 409, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 img {
+    width: 250px;
+    padding-bottom: 100px;
+  }
+
+  /* line 414, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .title {
+    font-size: 25px;
+    font-family: Lato;
+    margin: 50px 0 0 30px;
+  }
+
+  /* line 420, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot {
+    margin: 15px 0 0 35px;
+  }
+
+  /* line 424, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #logo {
+    padding-left: 30px;
+  }
+}
+@media (min-width: 400px) {
+  /* line 431, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .section-header {
+    font-family: Lato;
+    font-size: 20px;
+    padding: 20px 0 20px 30px;
+  }
+
+  /* line 437, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon {
+    margin-top: 50px;
+    margin-left: 30px;
+    display: inline-block;
+    float: left;
+    padding-bottom: 0px;
+  }
+
+  /* line 445, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon img {
+    width: 300px;
+  }
+
+  /* line 449, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .fname {
+    position: absolute;
+    color: white;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 340px;
+    padding-left: 40px;
+    text-shadow: 3px 3px 15px #000000;
+  }
+
+  /* line 459, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .lname {
+    color: black;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-left: 40px;
+  }
+
+  /* line 466, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .bio {
+    margin: 20px 50px 0 30px;
+    font-family: Lato;
+    font-size: 16px;
+    clear: both;
+    padding-bottom: 40px;
+  }
+
+  /* line 474, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 {
+    position: relative;
+    padding-top: 150px;
+    margin-bottom: 250px;
+  }
+
+  /* line 480, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 img {
+    width: 250px;
+  }
+
+  /* line 484, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .title {
+    font-size: 25px;
+    font-family: Lato;
+    margin: 50px 0 0 30px;
+  }
+
+  /* line 490, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot {
+    margin: 15px 0 0 35px;
+  }
+
+  /* line 494, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #logo {
+    padding-left: 30px;
+  }
+}
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  /* line 501, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .section-header {
+    font-family: Lato;
+    font-size: 20px;
+    padding: 20px 0 20px 30px;
+  }
+
+  /* line 507, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon {
+    margin-top: 50px;
+    margin-left: 30px;
+    display: inline-block;
+    float: left;
+    padding-bottom: 20px;
+  }
+
+  /* line 515, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon img {
+    width: 300px;
+  }
+
+  /* line 519, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .fname {
+    position: absolute;
+    color: white;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+    padding-left: 160px;
+    text-shadow: 3px 3px 15px #000000;
+  }
+
+  /* line 529, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .lname {
+    color: black;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+  }
+
+  /* line 536, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .bio {
+    margin: 20px 100px 0 30px;
+    font-family: Lato;
+    font-size: 16px;
+    clear: both;
+    padding-bottom: 40px;
+  }
+
+  /* line 544, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 {
+    position: relative;
+    padding-top: 150px;
+    margin-bottom: 300px;
+  }
+
+  /* line 550, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 img {
+    width: 300px;
+  }
+
+  /* line 554, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .title {
+    font-size: 30px;
+    font-family: Lato;
+    margin: 200px 0 0 30px;
+  }
+
+  /* line 560, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot {
+    margin: 15px 0 0 35px;
+  }
+
+  /* line 564, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #logo {
+    padding-left: 30px;
+  }
+}
+/* Larger than tablet */
+@media (min-width: 750px) {
+  /* line 571, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .section-header {
+    font-family: Lato;
+    font-size: 22px;
+    padding: 20px 0 20px 100px;
+  }
+
+  /* line 577, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon {
+    margin-top: 50px;
+    margin-left: 100px;
+    display: inline-block;
+    float: left;
+    padding-bottom: 20px;
+  }
+
+  /* line 585, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon img {
+    width: 300px;
+  }
+
+  /* line 589, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .fname {
+    position: absolute;
+    color: white;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+    padding-left: 230px;
+    text-shadow: 3px 3px 15px #000000;
+  }
+
+  /* line 599, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .lname {
+    color: black;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+  }
+
+  /* line 606, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .bio {
+    margin: 20px 100px 0 100px;
+    font-family: Lato;
+    font-size: 16px;
+    clear: both;
+    padding-bottom: 40px;
+    max-width: 700px;
+  }
+
+  /* line 617, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 {
+    position: relative;
+    padding-top: 150px;
+    margin-bottom: 400px;
+  }
+
+  /* line 623, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 img {
+    width: 400px;
+  }
+
+  /* line 627, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .title {
+    font-size: 40px;
+    font-family: Lato;
+    margin: 275px 0 0 100px;
+  }
+
+  /* line 633, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot {
+    margin: 15px 0 0 105px;
+  }
+
+  /* line 637, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #logo {
+    padding-left: 100px;
+  }
+}
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  /* line 644, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .bio {
+    margin: 20px 50px 0 600px;
+    font-family: Lato;
+    font-size: 16px;
+    clear: none;
+  }
+
+  /* line 651, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon {
+    margin-top: 50px;
+    margin-left: 175px;
+    display: inline-block;
+    float: left;
+    padding-bottom: 50px;
+  }
+
+  /* line 659, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .eamon img {
+    width: 375px;
+  }
+
+  /* line 663, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .fname {
+    position: absolute;
+    color: white;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+    padding-left: 380px;
+    text-shadow: 3px 3px 15px #000000;
+  }
+
+  /* line 673, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .lname {
+    color: black;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+  }
+
+  /* line 680, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 {
+    position: relative;
+    padding-top: 150px;
+    margin-bottom: 500px;
+  }
+
+  /* line 686, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 img {
+    width: 450px;
+  }
+
+  /* line 690, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .home-left {
+    float: left;
+  }
+
+  /* line 694, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .title {
+    font-size: 50px;
+    font-family: Lato;
+    margin: 275px 0 0 175px;
+  }
+
+  /* line 700, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot {
+    margin: 15px 0 0 185px;
+  }
+
+  /* line 704, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot img {
+    padding-right: 20px;
+  }
+
+  /* line 708, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .section-header {
+    font-family: Lato;
+    font-size: 25px;
+    padding: 20px 0 20px 175px;
+  }
+
+  /* line 714, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #logo {
+    padding-left: 175px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 720, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 {
+    position: relative;
+    padding-top: 150px;
+    margin-bottom: 600px;
+  }
+
+  /* line 726, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  #cf3 img {
+    position: absolute;
+    right: 0;
+    width: 600px;
+  }
+
+  /* line 732, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .home-left {
+    float: left;
+  }
+
+  /* line 736, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .title {
+    font-size: 50px;
+    font-family: Lato;
+    margin: 275px 0 0 175px;
+  }
+
+  /* line 742, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot {
+    margin: 15px 0 0 185px;
+  }
+
+  /* line 746, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .dot img {
+    padding-right: 20px;
+  }
+
+  /* line 750, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .bio {
+    margin: 40px 150px 0 600px;
+    font-family: Lato;
+    font-size: 18px;
+  }
+
+  /* line 756, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .fname {
+    position: absolute;
+    color: white;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+    padding-left: 380px;
+    text-shadow: 3px 3px 15px #000000;
+  }
+
+  /* line 766, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .lname {
+    color: black;
+    font-family: GothamBold;
+    font-size: 40px;
+    padding-top: 60px;
+  }
+}
+/*******************************************************
+					MODAL
+*******************************************************/
+/* line 777, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* line 783, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+/* line 786, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+/* line 801, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  padding-bottom: 200px;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+/* Caption of Modal Image */
+/* line 812, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+#caption {
+  padding-bottom: 10px;
+  display: inline-block;
+  color: #ccc;
+  font-family: Lato;
+  font-size: 24px;
+  vertical-align: top;
+}
+
+/* line 823, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.sale {
+  position: relative;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 829, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.sale::before {
+  position: absolute;
+  content: "";
+  opacity: 1;
+  left: 10%;
+  top: .55em;
+  right: 0;
+  color: red;
+  border-top: 3px solid;
+  border-color: inherit;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+/* line 845, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+#price_container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+/* line 852, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+#price {
+  padding-left: 15px;
+  display: inline-block;
+  color: #ccc;
+  opacity: .7;
+  font-family: Lato;
+  font-size: 24px;
+  vertical-align: top;
+}
+
+/* line 862, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+#sale_price {
+  padding-left: 15px;
+  display: inline-block;
+  color: #ccc;
+  opacity: 1;
+  font-family: Lato;
+  font-size: 24px;
+  vertical-align: top;
+}
+
+/* line 875, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+#price_caption {
+  display: inline-block;
+  color: #ccc;
+  font-family: Lato;
+  font-size: 24px;
+  margin-left: 5px;
+  vertical-align: top;
+}
+
+/* line 885, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.wrapModalImg {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* line 890, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.purchase {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* line 896, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+#discount_code {
+  display: inline-block;
+  padding-left: 5px;
+  margin-left: 40px;
+  vertical-align: 40%;
+}
+
+/* Add Animation */
+/* line 905, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.modal-content, #caption, .purchase {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* The Close Button */
+/* line 923, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* line 933, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  /* line 942, /Users/Gabe/Code/Eamonism/app/assets/stylesheets/main.scss */
+  .modal-content {
+    width: 100%;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

@@ -862,9 +862,9 @@ a:hover {
 #sale_price {
 	padding-left: 15px;
 	display: inline-block;
-	left: 0;
-	top: 80%;
-	position: absolute;
+	//left: 0;
+	//top: 80%;
+	//position: absolute;
 	color: #ccc;
 	opacity: 1;
 	font-family: Lato;
@@ -890,6 +890,7 @@ a:hover {
 .purchase {
 	display: inline-block;
 	margin-left: 20px;
+
 }
 
 #discount_code {
