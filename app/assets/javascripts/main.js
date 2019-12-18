@@ -122,6 +122,7 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$110";
+	    var price_caption = document.getElementById('price_caption');
 	    document.getElementById('price_input').value = 82;
 
 		var sale_price = document.getElementById('sale_price');
@@ -137,6 +138,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 
@@ -158,7 +160,7 @@ function startLightBox(event) {
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
-
+		var price_caption = document.getElementById('price_caption');
 
 		var sale_price = document.getElementById('sale_price');
 		sale_price.style.display = "inline-block";
@@ -170,6 +172,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 
@@ -184,7 +187,7 @@ function startLightBox(event) {
 		document.getElementById('item_name').value = titles[index];
 	    modal.style.display = "block";
 	    modalImg.src = images[index];
-
+		var price_caption = document.getElementById('price_caption');
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$50";
 	    document.getElementById('price_input').value = 37;
@@ -202,6 +205,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 
@@ -218,6 +222,8 @@ function startLightBox(event) {
 	    modalImg.src = images[index];
 
 	    var price = document.getElementById('price');
+
+		var price_caption = document.getElementById('price_caption');
 	    price.innerHTML = "$45";
 	    document.getElementById('price_input').value = 33;
 
@@ -234,6 +240,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 	else if(index == 5) {	// Get the modal
@@ -250,6 +257,8 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$60";
+
+		var price_caption = document.getElementById('price_caption');
 	    document.getElementById('price_input').value = 45;
 
 		var sale_price = document.getElementById('sale_price');
@@ -265,6 +274,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 
@@ -285,6 +295,8 @@ function startLightBox(event) {
 	    document.getElementById('price_input').value = 45;
 
 		var sale_price = document.getElementById('sale_price');
+
+		var price_caption = document.getElementById('price_caption');
 		sale_price.style.display = "inline-block";
 		sale_price.innerHTML = '$45';
 
@@ -299,6 +311,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 
@@ -309,6 +322,7 @@ function startLightBox(event) {
 		// Get the image and insert it inside the modal - use its "alt" text as a caption
 		var img = document.getElementById(index);
 		var modalImg = document.getElementById("img");
+		var price_caption = document.getElementById('price_caption');
 		var captionText = titles[index];
 		document.getElementById('item_name').value = titles[index];
 	    modal.style.display = "block";
@@ -331,6 +345,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 
@@ -345,7 +360,7 @@ function startLightBox(event) {
 		document.getElementById('item_name').value = titles[index];
 	    modal.style.display = "block";
 	    modalImg.src = images[index];
-
+		var price_caption = document.getElementById('price_caption');
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$45";
 	    document.getElementById('price_input').value = 35;
@@ -365,6 +380,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 
@@ -381,6 +397,8 @@ function startLightBox(event) {
 	    modalImg.src = images[index];
 
 	    var price = document.getElementById('price');
+
+		var price_caption = document.getElementById('price_caption');
 	    price.innerHTML = "$45";
 	    document.getElementById('price_input').value = 35;
 
@@ -399,6 +417,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 
@@ -415,6 +434,8 @@ function startLightBox(event) {
 	    modalImg.src = images[index];
 
 	    var price = document.getElementById('price');
+
+		var price_caption = document.getElementById('price_caption');
 	    price.innerHTML = "$45";
 	    document.getElementById('price_input').value = 33;
 
@@ -433,6 +454,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 
@@ -452,6 +474,8 @@ function startLightBox(event) {
 	    price.innerHTML = "$50";
 	    document.getElementById('price_input').value = 37;
 
+		var price_caption = document.getElementById('price_caption');
+
 		price.classList.add('sale');
 
 		var sale_price = document.getElementById('sale_price');
@@ -467,6 +491,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 
@@ -479,6 +504,8 @@ function startLightBox(event) {
 		var modalImg = document.getElementById("img");
 		var captionText = titles[index];
 		document.getElementById('item_name').value = titles[index];
+
+		var price_caption = document.getElementById('price_caption');
 	    modal.style.display = "block";
 	    modalImg.src = images[index];
 
@@ -501,6 +528,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 	
@@ -522,6 +550,8 @@ function startLightBox(event) {
 
 		price.classList.add('sale');
 
+		var price_caption = document.getElementById('price_caption');
+
 		var sale_price = document.getElementById('sale_price');
 		sale_price.style.display = "inline-block";
 		sale_price.innerHTML = '$45';
@@ -535,11 +565,15 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 
 	else if(index < 20){	// Get the modal
 		var modal = document.getElementById('myModal');
+
+
+		var price_caption = document.getElementById('price_caption');
 		
 
 		// Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -569,6 +603,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 
@@ -586,6 +621,7 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$90";
+		var price_caption = document.getElementById('price_caption');
 	    document.getElementById('price_input').value = 67;
 
 		price.classList.add('sale');
@@ -603,6 +639,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 
@@ -620,6 +657,8 @@ function startLightBox(event) {
 		document.getElementById('item_name').value = titles[index];
 	    modal.style.display = "block";
 	    modalImg.src = images[index];
+
+		var price_caption = document.getElementById('price_caption');
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$6";
@@ -640,6 +679,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 		else if(index == 25) {	// Get the modal
@@ -678,6 +718,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 
@@ -716,6 +757,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 	else if(index == 27) {	// Get the modal
@@ -753,6 +795,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
 			modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 	else if(index == 28) {	// Get the modal
@@ -792,6 +835,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
 			modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 	else if(index == 29) {	// Get the modal
@@ -833,6 +877,7 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
 			modal.style.display = "none";
+price_caption.innerHTML = "";
 		}
 	}
 
@@ -853,7 +898,7 @@ function startLightBox(event) {
 		var sale_price = document.getElementById('sale_price');
 		sale_price.style.display = "inline-block";
 		sale_price.innerHTML = '$3';
-
+		var price_caption = document.getElementById('price_caption');
 		
 
 
@@ -869,6 +914,8 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
+			price_caption.innerHTML = "";
+
 		}
 	}
 }
