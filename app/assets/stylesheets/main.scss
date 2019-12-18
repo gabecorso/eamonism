@@ -818,14 +818,68 @@ a:hover {
     vertical-align: top;
 }
 
+
+
+.sale {
+	position: relative;
+	color: rgba(255,255,255, .5);
+}
+
+
+.sale::before {
+	position: absolute;
+	content: "";
+	opacity: 1;
+	left: 10%;
+	top: .55em;
+	right: 0;
+	color: red;
+	border-top: 3px solid;
+	border-color: inherit;
+	-webkit-transform:rotate(5deg);
+	-moz-transform:rotate(5deg);
+	-ms-transform:rotate(5deg);
+	-o-transform:rotate(5deg);
+	transform:rotate(5deg);
+}
+#price_container {
+
+	width: 100%;
+	position: relative;
+	margin-bottom: 35px;
+}
+
 #price {
-    
     padding-left: 15px;
     display: inline-block;
     color: #ccc;
+	opacity: .7;
     font-family: Lato;
     font-size: 24px;
     vertical-align: top;
+}
+
+#sale_price {
+	padding-left: 15px;
+	display: inline-block;
+	left: 0;
+	top: 80%;
+	position: absolute;
+	color: #ccc;
+	opacity: 1;
+	font-family: Lato;
+	font-size: 24px;
+	vertical-align: top;
+}
+
+#price_caption {
+
+	display: inline-block;
+	color: #ccc;
+	font-family: Lato;
+	font-size: 24px;
+	margin-left: 5px;
+	vertical-align: top;
 }
 
 .wrapModalImg {

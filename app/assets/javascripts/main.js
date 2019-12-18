@@ -122,7 +122,11 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$110";
-	    document.getElementById('price_input').value = 110;
+	    document.getElementById('price_input').value = 82;
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$82';
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -150,10 +154,15 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$120";
-	    document.getElementById('price_input').value = 120;
+	    document.getElementById('price_input').value = 90;
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
+
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$90';
 
 		// Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close")[0];
@@ -178,7 +187,11 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$50";
-	    document.getElementById('price_input').value = 50;
+	    document.getElementById('price_input').value = 37;
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$37';
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -206,7 +219,11 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$45";
-	    document.getElementById('price_input').value = 45;
+	    document.getElementById('price_input').value = 33;
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$33';
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -233,7 +250,11 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$60";
-	    document.getElementById('price_input').value = 60;
+	    document.getElementById('price_input').value = 45;
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$45';
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -261,7 +282,13 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$60";
-	    document.getElementById('price_input').value = 60;
+	    document.getElementById('price_input').value = 45;
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$45';
+
+
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -289,7 +316,11 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$45";
-	    document.getElementById('price_input').value = 45;
+	    document.getElementById('price_input').value = 33;
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$33';
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -317,7 +348,13 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$45";
-	    document.getElementById('price_input').value = 45;
+	    document.getElementById('price_input').value = 35;
+
+		price.classList.add('sale');
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$33';
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -345,7 +382,13 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$45";
-	    document.getElementById('price_input').value = 45;
+	    document.getElementById('price_input').value = 35;
+
+		price.classList.add('sale');
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$33';
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -373,7 +416,13 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$45";
-	    document.getElementById('price_input').value = 45;
+	    document.getElementById('price_input').value = 33;
+
+		price.classList.add('sale');
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$33';
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -401,7 +450,13 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$50";
-	    document.getElementById('price_input').value = 50;
+	    document.getElementById('price_input').value = 37;
+
+		price.classList.add('sale');
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$37';
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -429,7 +484,13 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$90";
-	    document.getElementById('price_input').value = 90;
+	    document.getElementById('price_input').value = 67;
+
+		price.classList.add('sale');
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$67';
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -457,7 +518,13 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$60";
-	    document.getElementById('price_input').value = 60;
+	    document.getElementById('price_input').value = 45;
+
+		price.classList.add('sale');
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$45';
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -485,7 +552,13 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$50";
-	    document.getElementById('price_input').value = 50;
+	    document.getElementById('price_input').value = 37;
+
+		price.classList.add('sale');
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$37';
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -513,7 +586,13 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$90";
-	    document.getElementById('price_input').value = 90;
+	    document.getElementById('price_input').value = 67;
+
+		price.classList.add('sale');
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$67';
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -544,7 +623,13 @@ function startLightBox(event) {
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$6";
-	    document.getElementById('price_input').value = 6;
+	    document.getElementById('price_input').value = 4;
+
+		price.classList.add('sale');
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$4';
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -570,10 +655,21 @@ function startLightBox(event) {
 	    modalImg.src = images[index];
 
 	    var price = document.getElementById('price');
-	    price.innerHTML = "$90 - Inquire for custom sizing";
-	    document.getElementById('price_input').value = 90;
+	    price.innerHTML = "$90 ";
+	    document.getElementById('price_input').value = 67;
 
-	    var caption = document.getElementById("caption");
+
+		price.classList.add('sale');
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$67';
+
+		var price_caption = document.getElementById('price_caption');
+		price_caption.innerHTML = " - Inquire for custom sizing";
+
+
+		var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
 
 		// Get the <span> element that closes the modal
@@ -598,8 +694,18 @@ function startLightBox(event) {
 	    modalImg.src = images[index];
 
 	    var price = document.getElementById('price');
-	    price.innerHTML = "$95 - Inquire for custom sizing";
-	    document.getElementById('price_input').value = 95;
+	    price.innerHTML = "$95 ";
+	    document.getElementById('price_input').value = 71;
+
+
+		price.classList.add('sale');
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$71';
+
+		var price_caption = document.getElementById('price_caption');
+		price_caption.innerHTML = " - Inquire for custom sizing";
 
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
@@ -625,8 +731,18 @@ function startLightBox(event) {
 		modalImg.src = images[index];
 
 		var price = document.getElementById('price');
-		price.innerHTML = "$85 - (8x10s -- $75 -- available upon request)";
-		document.getElementById('price_input').value = 85;
+		price.innerHTML = "$85 ";
+		document.getElementById('price_input').value = 63;
+
+
+		price.classList.add('sale');
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$63';
+
+		var price_caption = document.getElementById('price_caption');
+		price_caption.innerHTML = " - (8x10s -- $75 -- available upon request)";
 
 		var caption = document.getElementById("caption");
 		caption.innerHTML = captionText;
@@ -652,8 +768,20 @@ function startLightBox(event) {
 		modalImg.src = images[index];
 
 		var price = document.getElementById('price');
-		price.innerHTML = "$100 - Inquire for custom sizing";
-		document.getElementById('price_input').value = 100;
+		price.innerHTML = "$100 ";
+		document.getElementById('price_input').value = 75;
+
+
+
+		price.classList.add('sale');
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$75';
+
+		var price_caption = document.getElementById('price_caption');
+		price_caption.innerHTML = " - Inquire for custom sizing";
+
 
 		var caption = document.getElementById("caption");
 		caption.innerHTML = captionText;
@@ -679,8 +807,20 @@ function startLightBox(event) {
 		modalImg.src = images[index];
 
 		var price = document.getElementById('price');
-		price.innerHTML = "$85 - (8x10s | 9x12s - $75 | $80 - available upon request)";
-		document.getElementById('price_input').value = 85;
+		price.innerHTML = "$85";
+
+
+		price.classList.add('sale');
+
+		var price_caption = document.getElementById('price_caption');
+		price_caption.innerHTML = " - (8x10s | 9x12s - $75 | $80 - available upon request)";
+		document.getElementById('price_input').value = 63;
+
+
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$63';
 
 		//populate the drop down with variants
 
@@ -709,9 +849,19 @@ function startLightBox(event) {
 	    modalImg.src = images[index];
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$4";
+
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = '$3';
+
+		
+
+
+
+
 	    var caption = document.getElementById("caption");
 	    caption.innerHTML = captionText;
-	     document.getElementById('price_input').value = 4;
+	     document.getElementById('price_input').value = 3;
 
 		// Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close")[0];
