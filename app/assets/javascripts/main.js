@@ -62,7 +62,8 @@ var images = [
 
 			  "https://eamonism.s3.amazonaws.com/pomegranate-metamorphosis-compressed-for-web.jpg",
 			  'https://eamonism.s3.amazonaws.com/At-The-Gates-of-Paradise-II----11x15----Compressed-for-site.jpg',
-					'https://eamonism.s3.amazonaws.com/Bird-to-Whistle-on-9x12----compressed.jpg'
+					'https://eamonism.s3.amazonaws.com/Bird-to-Whistle-on-9x12----compressed.jpg',
+	"https://eamonism.s3.amazonaws.com/Fish-Metamorphosis-.jpg"
 	      		]
 
 // holds the titles of all the images
@@ -96,7 +97,9 @@ var titles = [  'Vision of a Dying Crab (1st Ed.) - 11x14 inches', 'Vision of a 
 
 					'At the Gates of Paradise II - 11x15 inches',
 
-					'Bird-Whistle Metamorphosis - 11x15 inches'
+					'Bird-Whistle Metamorphosis - 11x15 inches',
+
+					'Metamorphosis of Angelfish and Archipelago - 11x15 inches'
 
 				
 
@@ -878,6 +881,42 @@ price_caption.innerHTML = "";
 		span.onclick = function() {
 			modal.style.display = "none";
 price_caption.innerHTML = "";
+		}
+	}
+	else if(index == 30) {	// Get the modal
+		var modal = document.getElementById('myModal');
+
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+		modal.style.display = "block";
+		modalImg.src = images[index];
+
+		var price = document.getElementById('price');
+		price.innerHTML = "$85";
+
+
+
+		var price_caption = document.getElementById('price_caption');
+		price_caption.innerHTML = " - (11x15s | 9x12s - $75 | $80 - available upon request)";
+		document.getElementById('price_input').value = 85;
+
+
+		//populate the drop down with variants
+
+		var caption = document.getElementById("caption");
+		caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+			price_caption.innerHTML = "";
 		}
 	}
 
