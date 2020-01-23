@@ -901,7 +901,7 @@ price_caption.innerHTML = "";
 
 
 		var price_caption = document.getElementById('price_caption');
-		price_caption.innerHTML = " - (11x15s | 9x12s - $75 | $80 - available upon request)";
+		price_caption.innerHTML = " - (8x15s | 9x12s - $75 | $80 - available upon request)";
 		document.getElementById('price_input').value = 85;
 
 
