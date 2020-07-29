@@ -63,7 +63,11 @@ var images = [
 			  "https://eamonism.s3.amazonaws.com/pomegranate-metamorphosis-compressed-for-web.jpg",
 			  'https://eamonism.s3.amazonaws.com/At-The-Gates-of-Paradise-II----11x15----Compressed-for-site.jpg',
 					'https://eamonism.s3.amazonaws.com/Bird-to-Whistle-on-9x12----compressed.jpg',
-	"https://eamonism.s3.amazonaws.com/Fish-Metamorphosis-.jpg"
+	"https://eamonism.s3.amazonaws.com/Fish-Metamorphosis-.jpg",
+	"https://eamonism.s3.amazonaws.com/Portrait-of-Infatuation---grayscale-11x14--compressed-for-site.png",
+	"https://eamonism.s3.amazonaws.com/Portrait-of-Infatuation-II---11-x-14--compressed-for-site.png",
+	"https://eamonism.s3.amazonaws.com/Oasis---final---9x12----compressed-for-site.png",
+	"https://eamonism.s3.amazonaws.com/Crocodile-Pistol-Metamorphosis----compressed-for-site.png"
 	      		]
 
 // holds the titles of all the images
@@ -99,9 +103,13 @@ var titles = [  'Vision of a Dying Crab (1st Ed.) - 11x14 inches', 'Vision of a 
 
 					'Bird-Whistle Metamorphosis - 11x15 inches',
 
-					'Metamorphosis of Angelfish and Archipelago - 11x15 inches'
+					'Metamorphosis of Angelfish and Archipelago - 11x15 inches',
 
-				
+					'Portrait of Infatuation - 11x14 inches',
+
+					'Portrait of Infatuation II - 11x14 inches',
+					'Oasis - 9x12 inches',
+					'Metamorphosis of Crocodile and Pistol - 11x14 inches'
 
 				];
 
@@ -123,8 +131,10 @@ function startLightBox(event) {
 	    modal.style.display = "block";
 	    modalImg.src = images[index];
 
+
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$110";
+		price.classList.add('sale');
 	    var price_caption = document.getElementById('price_caption');
 	    document.getElementById('price_input').value = 82;
 
@@ -141,7 +151,9 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 
@@ -159,6 +171,7 @@ price_caption.innerHTML = "";
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$120";
+		price.classList.add('sale');
 	    document.getElementById('price_input').value = 90;
 
 	    var caption = document.getElementById("caption");
@@ -175,7 +188,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 
@@ -193,6 +208,7 @@ price_caption.innerHTML = "";
 		var price_caption = document.getElementById('price_caption');
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$50";
+		price.classList.add('sale');
 	    document.getElementById('price_input').value = 37;
 
 		var sale_price = document.getElementById('sale_price');
@@ -208,7 +224,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 
@@ -228,6 +246,7 @@ price_caption.innerHTML = "";
 
 		var price_caption = document.getElementById('price_caption');
 	    price.innerHTML = "$45";
+		price.classList.add('sale');
 	    document.getElementById('price_input').value = 33;
 
 		var sale_price = document.getElementById('sale_price');
@@ -243,7 +262,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 	else if(index == 5) {	// Get the modal
@@ -260,6 +281,7 @@ price_caption.innerHTML = "";
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$60";
+		price.classList.add('sale');
 
 		var price_caption = document.getElementById('price_caption');
 	    document.getElementById('price_input').value = 45;
@@ -277,7 +299,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 
@@ -295,6 +319,7 @@ price_caption.innerHTML = "";
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$60";
+	    price.classList.add('sale');
 	    document.getElementById('price_input').value = 45;
 
 		var sale_price = document.getElementById('sale_price');
@@ -314,7 +339,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 
@@ -333,6 +360,7 @@ price_caption.innerHTML = "";
 
 	    var price = document.getElementById('price');
 	    price.innerHTML = "$45";
+		price.classList.add('sale');
 	    document.getElementById('price_input').value = 33;
 
 		var sale_price = document.getElementById('sale_price');
@@ -348,7 +376,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 
@@ -383,7 +413,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 
@@ -420,7 +452,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 
@@ -457,7 +491,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 
@@ -494,7 +530,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 
@@ -531,7 +569,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 	
@@ -568,7 +608,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 
@@ -606,7 +648,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 
@@ -642,13 +686,11 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
-
-
-
-
 	else if(index < 23){	// Get the modal
 		var modal = document.getElementById('myModal');
 		
@@ -682,10 +724,12 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
-		else if(index == 25) {	// Get the modal
+	else if(index == 25) {	// Get the modal
 		var modal = document.getElementById('myModal');
 		
 
@@ -722,9 +766,9 @@ price_caption.innerHTML = "";
 		span.onclick = function() { 
 		    modal.style.display = "none";
 price_caption.innerHTML = "";
+			sale_price.style.display = "none";
 		}
 	}
-
 	else if(index == 26) {	// Get the modal
 		var modal = document.getElementById('myModal');
 		
@@ -761,6 +805,7 @@ price_caption.innerHTML = "";
 		span.onclick = function() { 
 		    modal.style.display = "none";
 price_caption.innerHTML = "";
+			sale_price.style.display = "none";
 		}
 	}
 	else if(index == 27) {	// Get the modal
@@ -798,7 +843,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
 			modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 	else if(index == 28) {	// Get the modal
@@ -838,7 +885,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
 			modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 	else if(index == 29) {	// Get the modal
@@ -880,7 +929,9 @@ price_caption.innerHTML = "";
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
 			modal.style.display = "none";
-price_caption.innerHTML = "";
+			price_caption.innerHTML = "";
+			sale_price.style.display = "none";
+			price.classList.remove('sale');
 		}
 	}
 	else if(index == 30) {	// Get the modal
@@ -902,6 +953,138 @@ price_caption.innerHTML = "";
 
 		var price_caption = document.getElementById('price_caption');
 		price_caption.innerHTML = " - (8x15s | 9x12s - $75 | $80 - available upon request)";
+		document.getElementById('price_input').value = 85;
+
+
+		//populate the drop down with variants
+
+		var caption = document.getElementById("caption");
+		caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+			price_caption.innerHTML = "";
+		}
+	}
+	else if(index == 31) {	// Get the modal
+		var modal = document.getElementById('myModal');
+
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+		modal.style.display = "block";
+		modalImg.src = images[index];
+
+		var price = document.getElementById('price');
+		price.innerHTML = "$75 ";
+		document.getElementById('price_input').value = 75;
+
+
+		var price_caption = document.getElementById('price_caption');
+		price_caption.innerHTML = " - Inquire for custom sizing";
+
+
+		var caption = document.getElementById("caption");
+		caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+			price_caption.innerHTML = "";
+		}
+	}
+	else if(index == 32) {	// Get the modal
+		var modal = document.getElementById('myModal');
+
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+		modal.style.display = "block";
+		modalImg.src = images[index];
+
+		var price = document.getElementById('price');
+		price.innerHTML = "$80";
+
+		document.getElementById('price_input').value = 80;
+
+
+		var caption = document.getElementById("caption");
+		caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+			price_caption.innerHTML = "";
+		}
+	}
+	else if(index == 33) {	// Get the modal
+		var modal = document.getElementById('myModal');
+
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+		modal.style.display = "block";
+		modalImg.src = images[index];
+
+		var price = document.getElementById('price');
+		price.innerHTML = "$80";
+
+
+		document.getElementById('price_input').value = 80;
+
+
+		//populate the drop down with variants
+
+		var caption = document.getElementById("caption");
+		caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+			price_caption.innerHTML = "";
+		}
+	}
+	else if(index == 34) {	// Get the modal
+		var modal = document.getElementById('myModal');
+
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+		modal.style.display = "block";
+		modalImg.src = images[index];
+
+		var price = document.getElementById('price');
+		price.innerHTML = "$85";
+
+
+
+		var price_caption = document.getElementById('price_caption');
+		price_caption.innerHTML = " - (8x10s | 9x12s - $75 | $80 - available upon request)";
 		document.getElementById('price_input').value = 85;
 
 
