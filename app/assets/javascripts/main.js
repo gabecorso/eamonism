@@ -68,7 +68,8 @@ var images = [
 				"https://eamonism.s3.amazonaws.com/Portrait-of-Infatuation-II---11-x-14--compressed-for-site.png",
 				"https://eamonism.s3.amazonaws.com/Oasis---final---9x12----compressed-for-site.png",
 				"https://eamonism.s3.amazonaws.com/Crocodile-Pistol-Metamorphosis----compressed-for-site.png",
-				"https://eamonism.s3.amazonaws.com/Metamorphosis-of-Crab-and-Throne----compressed-for-site.png"
+				"https://eamonism.s3.amazonaws.com/Metamorphosis-of-Crab-and-Throne----compressed-for-site.png",
+				"https://eamonism.s3.amazonaws.com/Creation-Myth---compressed-for-site.png"
 	      		]
 
 // holds the titles of all the images
@@ -111,7 +112,8 @@ var titles = [  'Vision of a Dying Crab (1st Ed.) - 11x14 inches', 'Vision of a 
 					'Portrait of Infatuation II - 11x14 inches',
 					'Oasis - 9x12 inches',
 					'Metamorphosis of Crocodile and Pistol - 11x14 inches',
-					'Metamorphosis of Crab and Throne - 11x14 inches'
+					'Metamorphosis of Crab and Throne - 11x14 inches',
+					'Creation Myth - 9x12 inches'
 
 				];
 
@@ -1123,6 +1125,42 @@ price_caption.innerHTML = "";
 
 		var price_caption = document.getElementById('price_caption');
 		price_caption.innerHTML = " - (8x10s | 9x12s - $75 | $80 - available upon request)";
+		document.getElementById('price_input').value = 85;
+
+
+		//populate the drop down with variants
+
+		var caption = document.getElementById("caption");
+		caption.innerHTML = captionText;
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+			price_caption.innerHTML = "";
+		}
+	}
+	else if(index == 36) {	// Get the modal
+		var modal = document.getElementById('myModal');
+
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(index);
+		var modalImg = document.getElementById("img");
+		var captionText = titles[index];
+		document.getElementById('item_name').value = titles[index];
+		modal.style.display = "block";
+		modalImg.src = images[index];
+
+		var price = document.getElementById('price');
+		price.innerHTML = "$85";
+
+
+
+		var price_caption = document.getElementById('price_caption');
+		price_caption.innerHTML = "";
 		document.getElementById('price_input').value = 85;
 
 
