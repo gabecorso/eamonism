@@ -487,7 +487,7 @@ function startLightBox(event) {
 		}
 	}
 
-	else if(index < 20 && index != 0 && index != 1){	// Get the modal
+	else if(index < 20 && index != 0 && index != 1 && index != 2 ){	// Get the modal
 		var modal = document.getElementById('myModal');
 
 
@@ -640,102 +640,6 @@ function startLightBox(event) {
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-	else if(index == 27) {	// Get the modal
-		var modal = document.getElementById('myModal');
-
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-		modal.style.display = "block";
-		modalImg.src = images[index];
-
-		var price = document.getElementById('price');
-		price.innerHTML = "$85 ";
-		document.getElementById('price_input').value = 85;
-
-		var price_caption = document.getElementById('price_caption');
-		price_caption.innerHTML = " - (8x10s -- $75 -- available upon request)";
-
-		var caption = document.getElementById("caption");
-		caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-			modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-	else if(index == 28) {	// Get the modal
-		var modal = document.getElementById('myModal');
-
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-		modal.style.display = "block";
-		modalImg.src = images[index];
-
-		var price = document.getElementById('price');
-		price.innerHTML = "$100 ";
-		document.getElementById('price_input').value = 100;
-
-		var price_caption = document.getElementById('price_caption');
-		price_caption.innerHTML = " - Inquire for custom sizing";
-
-
-		var caption = document.getElementById("caption");
-		caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-			modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-	else if(index == 29) {	// Get the modal
-		var modal = document.getElementById('myModal');
-
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-		modal.style.display = "block";
-		modalImg.src = images[index];
-
-		var price = document.getElementById('price');
-		price.innerHTML = "$85";
-
-		var price_caption = document.getElementById('price_caption');
-		price_caption.innerHTML = " - (8x10s | 9x12s - $75 | $80 - available upon request)";
-		document.getElementById('price_input').value = 85;
-
-		//populate the drop down with variants
-
-		var caption = document.getElementById("caption");
-		caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-			modal.style.display = "none";
 			price_caption.innerHTML = "";
 		}
 	}
