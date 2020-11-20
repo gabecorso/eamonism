@@ -225,7 +225,7 @@ function startLightBox(event) {
 		}
 	}
 
-	else if(index < 6) {	// Get the modal
+	else if(index < 6 && index != 0 && index != 1) {	// Get the modal
 		var modal = document.getElementById('myModal');
 		
 
@@ -776,7 +776,7 @@ function startLightBox(event) {
 	//metamorphosis series, plus oasis at 33, at the gates of paradiese II at 28
 	//vision of dying crab I and II at 1 and 2
 	else if(
-		index == 1 || index == 2 || index == 27 ||
+		index == 0 || index == 1 || index == 2 || index == 27 ||
 		index == 28 || index == 29 || index == 30 ||
 		index == 33 || index == 34 || index == 35) {	// Get the modal
 		var modal = document.getElementById('myModal');
