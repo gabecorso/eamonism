@@ -388,7 +388,7 @@ function startLightBox(event) {
 		}
 	}
 
-	else if(index < 15) {	// Get the modal
+	else if(index < 15 && index != 0 && index != 1) {	// Get the modal
 		var modal = document.getElementById('myModal');
 		
 
@@ -487,7 +487,7 @@ function startLightBox(event) {
 		}
 	}
 
-	else if(index < 20){	// Get the modal
+	else if(index < 20 && index != 0 && index != 1){	// Get the modal
 		var modal = document.getElementById('myModal');
 
 
@@ -548,7 +548,7 @@ function startLightBox(event) {
 			price_caption.innerHTML = "";
 		}
 	}
-	else if(index < 23){	// Get the modal
+	else if(index < 23 && index != 0 && index != 1){	// Get the modal
 		var modal = document.getElementById('myModal');
 		
 
