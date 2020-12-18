@@ -8,777 +8,101 @@ function changeImage() {
 	document.getElementById('bird').src = 'https://s3.amazonaws.com/eamonism/colorbird.png';
 }
 
+const stock = [
+	//0-2
+	{title: "Vision of a Dying Crab (1st Ed.) - 11x14 inches", image: "https://eamonism.s3.amazonaws.com/Images+for+site+6-4-19/Vision-of-a-Dying-Crab----compressed-for-site-6-4-19.jpg", price: 110, onSale: true, salePrice: 82.5, id: 0},
+	{title: "Vision of a Dying Crab II (1st Ed.) - 11x14 inches", image: "https://eamonism.s3.amazonaws.com/Images+for+site+6-4-19/Vision-of-a-Dying-Crab-II----compressed-for-site-6-4-19.jpg", price: 110, onSale: true, salePrice: 82.5, id: 1},
+	{title: "Crab (1st Ed.) - 12x9 inches", image: "https://eamonism.s3.amazonaws.com/Images+for+site+6-4-19/crab-drawing----IG-version----8.5x5-6-16-19.jpg", price: 60, onSale: true, salePrice: 45, id: 2},
+	//3-5
+	{title: "The Botany Cipher (1st Ed.) - 9x12 inches", image: "https://eamonism.s3.amazonaws.com/Images+for+site+6-4-19/The-Botany-Cipher-compressed-for-site-6-4-19.jpg", price: 45, onSale: true, salePrice: 33.75, id: 3},
+	{title: "Capragraph II (1st. Ed.) - 10x14 inches", image: "https://s3.amazonaws.com/eamonism/Capragraph2.jpg", price: 60, onSale: true, salePrice: 45, id: 4},
+	{title: "The Hunters (1st Ed.) - 11x15 inches", image: "https://s3.amazonaws.com/eamonism/Hunters.jpg", price: 60, onSale: true, salePrice: 45, id: 5},
+	//6-8
+	{title: "Capragraph (1st Ed.) - 11x15", image: "https://s3.amazonaws.com/eamonism/Capragraph.jpg", price: 50, onSale: true, salePrice: 37.5, id: 6},
+	{title: "Augury (1st Ed.) - 12x16 inches", image: "https://s3.amazonaws.com/eamonism/Augury.jpg", price: 50, onSale: true, salePrice: 37.5, id: 7},
+	{title: "Castilla (1st Ed.) - 11x14 inches", image: "https://s3.amazonaws.com/eamonism/Castilla.jpg", price: 45, onSale: true, salePrice: 33.75, id: 8},
+	//9-11
+	{title: "Mind's Eyedrops (1st Ed.) - 11x15 inches", image: "https://s3.amazonaws.com/eamonism/MindsEyedrops.jpg", price: 50, onSale: true, salePrice: 37.5, id: 9},
+	{title: "Savannah of the Waning Gibbous (1st Ed.) - 9x12 inches", image: "https://s3.amazonaws.com/eamonism/port11.jpg", price: 45, onSale: true, salePrice: 33.75, id: 10},
+	{title: "Rodentia (1st Ed.) - 18x12 inches", image: "https://s3.amazonaws.com/eamonism/Rodentia.jpg", price: 45, onSale: true, salePrice: 33.75, id: 11},
+	//12-14
+	{title: "Dream of Queen Meabh (1st Ed.) - 9x12 inches", image: "https://s3.amazonaws.com/eamonism/DreamofQueenMeabh.jpg", price: 50, onSale: true, salePrice: 37.5, id: 12},
+	{title: "Psyght (1st Ed.) - 11x14 inches", image: "https://s3.amazonaws.com/eamonism/Psyght.jpg", price: 45, onSale: true, salePrice: 33.75, id: 13},
+	{title: "Ornithograph (2nd Ed.) - 12x16 inches", image: "https://s3.amazonaws.com/eamonism/Ornithograph.jpg", price: 50, onSale: true, salePrice: 37.5, id: 14},
+	//15-17
+	{title: "The Font of Eschaton (2nd Ed.) - 11x15 inches", image: "https://s3.amazonaws.com/eamonism/port12.jpg", price: 100, onSale: true, salePrice: 75, id: 15},
+	{title: "Ichthyograph (2nd Ed.) - 8x8 inches", image: "https://s3.amazonaws.com/eamonism/GildedFish.jpg", price: 50, onSale: true, salePrice: 37.5, id: 16},
+	{title: "Ornithograph II (3rd Ed.) - 12x16 inches", image: "https://s3.amazonaws.com/eamonism/port10.jpg", price: 60, onSale: true, salePrice: 45, id: 17},
+	//18-20
+	{title: "Las Granadas (2nd Ed.) - 11x17 inches", image: "https://s3.amazonaws.com/eamonism/Granadas.jpg", price: 50, onSale: true, salePrice: 37.5, id: 18},
+	{title: "Illuminette (2nd Ed.) - 9x12 inches", image: "https://s3.amazonaws.com/eamonism/Illuminette.jpg", price: 50, onSale: true, salePrice: 37.5, id: 19},
+	{title: "Prince Prospero (2nd Ed.) - 11x15 inches", image: "https://s3.amazonaws.com/eamonism/Prospero.jpg", price: 90, onSale: true, salePrice: 67.5, id: 20},
+	//21-23
+	{title: "Large Bird Sticker - 7x6.74 inches", image: "https://s3.amazonaws.com/eamonism/birdSticker.png", price: 6, onSale: false, salePrice: '', id: 21},
+	{title: "Large Fish Sticker - 6.86x5.5 inches", image: "https://s3.amazonaws.com/eamonism/fishSticker.png", price: 6, onSale: false, salePrice: '', id: 22},
+	{title: "Small Bird Sticker - 4x3.86 inches", image: "https://s3.amazonaws.com/eamonism/birdSticker.png", price: 4, onSale: false, salePrice: '', id: 23},
+	//24-26
+	{title: "Small Fish Sticker - 4x3.22 inches", image: "https://s3.amazonaws.com/eamonism/fishSticker.png", price: 4, onSale: false, salePrice: '', id: 24},
+	{title: "At the Gates of Paradise (1st Ed.) - 11x14 inches", image: "https://eamonism.s3.amazonaws.com/At-The-Gates-of-Paradise--10.5x13.5----Compressed-for-Site.jpg", price: 90, onSale: true, salePrice: 67.5, id: 25},
+	{title: "Minotaur in the Labyrinth - 11x14 inches", image: "https://eamonism.s3.amazonaws.com/Minotaur-in-the-Labyrinth--compressed-for-site.jpg", price: 100, onSale: true, salePrice: 75, id: 26},
+	//27-29
+	{title: "Metamorphosis of Pomegranate and Pocketwatch - 9x12 inches", image: "https://eamonism.s3.amazonaws.com/pomegranate-metamorphosis-compressed-for-web.jpg", price: 110, onSale: true, salePrice: 82.50, id: 27},
+	{title: "At the Gates of Paradise II - 11x15 inches", image: "https://eamonism.s3.amazonaws.com/At-The-Gates-of-Paradise-II----11x15----Compressed-for-site.jpg", price: 110, onSale: true, salePrice: 82.50, id: 28},
+	{title: "Bird-Whistle Metamorphosis - 9x12 inches", image: "https://eamonism.s3.amazonaws.com/Bird-to-Whistle-on-9x12----compressed.jpg", price: 110, onSale: true, salePrice: 82.50, id: 29},
+	//30-32
+	{title: "Metamorphosis of Angelfish and Archipelago - 9x12 inches", image: "https://eamonism.s3.amazonaws.com/Fish-Metamorphosis-.jpg", price: 110, onSale: true, salePrice: 82.50, id: 30},
+	{title: "Portrait of Infatuation - 11x14 inches", image: "https://eamonism.s3.amazonaws.com/Portrait-of-Infatuation---grayscale-11x14--compressed-for-site.png", price: 150, onSale: true, salePrice: 112.5, id: 31},
+	{title: "Portrait of Infatuation II - 11x14 inches", image: "https://eamonism.s3.amazonaws.com/Portrait-of-Infatuation-II---11-x-14--compressed-for-site.png", price: 150, onSale: true, salePrice: 112.5, id: 32},
+	//33-35
+	{title: "Oasis - 9x12 inches", image: "https://eamonism.s3.amazonaws.com/Oasis---final---9x12----compressed-for-site.png", price: 110, onSale: true, salePrice: 82.50, id: 33},
+	{title: "Metamorphosis of Crocodile and Pistol - 9x12 inches", image: "https://eamonism.s3.amazonaws.com/Crocodile-Pistol-Metamorphosis----compressed-for-site.png", price: 110, onSale: true, salePrice: 82.50, id: 34},
+	{title: "Metamorphosis of Crab and Throne - 9x12 inches", image: "https://eamonism.s3.amazonaws.com/Metamorphosis-of-Crab-and-Throne----compressed-for-site.png", price: 110, onSale: true, salePrice: 82.50, id: 35},
+	//36
+	{title: "Creation Myth - 9x12 inches", image: "https://eamonism.s3.amazonaws.com/Creation-Myth---compressed-for-site.png", price: 85, onSale: true, salePrice: 63.75, id: 36},
+]
 
 var index;
 
-var images = [
-				
-				"https://eamonism.s3.amazonaws.com/Images+for+site+6-4-19/Vision-of-a-Dying-Crab----compressed-for-site-6-4-19.jpg",
-				"https://eamonism.s3.amazonaws.com/Images+for+site+6-4-19/Vision-of-a-Dying-Crab-II----compressed-for-site-6-4-19.jpg",
-				"https://eamonism.s3.amazonaws.com/Images+for+site+6-4-19/crab-drawing----IG-version----8.5x5-6-16-19.jpg",
-				"https://eamonism.s3.amazonaws.com/Images+for+site+6-4-19/The-Botany-Cipher-compressed-for-site-6-4-19.jpg",
-
-			  "https://s3.amazonaws.com/eamonism/Capragraph2.jpg",
-			  
-			  "https://s3.amazonaws.com/eamonism/Hunters.jpg",
-			  "https://s3.amazonaws.com/eamonism/Capragraph.jpg",
-
-			  "https://s3.amazonaws.com/eamonism/Augury.jpg",
-			  "https://s3.amazonaws.com/eamonism/Castilla.jpg", 
-			  
-			  
-			  "https://s3.amazonaws.com/eamonism/MindsEyedrops.jpg", 
-
-			  "https://s3.amazonaws.com/eamonism/port11.jpg",
-
-			  
-			  "https://s3.amazonaws.com/eamonism/Rodentia.jpg", 
-			  "https://s3.amazonaws.com/eamonism/DreamofQueenMeabh.jpg", 
-			  "https://s3.amazonaws.com/eamonism/Psyght.jpg",
-
-
-			  "https://s3.amazonaws.com/eamonism/Ornithograph.jpg",
-
-
-			  "https://s3.amazonaws.com/eamonism/port12.jpg",
-			  "https://s3.amazonaws.com/eamonism/GildedFish.jpg", 
-
-			  "https://s3.amazonaws.com/eamonism/port10.jpg",
-
-			  "https://s3.amazonaws.com/eamonism/Granadas.jpg",
-			  "https://s3.amazonaws.com/eamonism/Illuminette.jpg",
-			  "https://s3.amazonaws.com/eamonism/Prospero.jpg",
-
-
-			  "https://s3.amazonaws.com/eamonism/birdSticker.png", 
-			  "https://s3.amazonaws.com/eamonism/fishSticker.png",
-
-			  "https://s3.amazonaws.com/eamonism/birdSticker.png", 
-			  "https://s3.amazonaws.com/eamonism/fishSticker.png",    
-
-
-			  "https://eamonism.s3.amazonaws.com/At-The-Gates-of-Paradise--10.5x13.5----Compressed-for-Site.jpg",
-			  "https://eamonism.s3.amazonaws.com/Minotaur-in-the-Labyrinth--compressed-for-site.jpg",
-
-			  "https://eamonism.s3.amazonaws.com/pomegranate-metamorphosis-compressed-for-web.jpg",
-			  'https://eamonism.s3.amazonaws.com/At-The-Gates-of-Paradise-II----11x15----Compressed-for-site.jpg',
-				'https://eamonism.s3.amazonaws.com/Bird-to-Whistle-on-9x12----compressed.jpg',
-				"https://eamonism.s3.amazonaws.com/Fish-Metamorphosis-.jpg",
-				"https://eamonism.s3.amazonaws.com/Portrait-of-Infatuation---grayscale-11x14--compressed-for-site.png",
-				"https://eamonism.s3.amazonaws.com/Portrait-of-Infatuation-II---11-x-14--compressed-for-site.png",
-				"https://eamonism.s3.amazonaws.com/Oasis---final---9x12----compressed-for-site.png",
-				"https://eamonism.s3.amazonaws.com/Crocodile-Pistol-Metamorphosis----compressed-for-site.png",
-				"https://eamonism.s3.amazonaws.com/Metamorphosis-of-Crab-and-Throne----compressed-for-site.png",
-				"https://eamonism.s3.amazonaws.com/Creation-Myth---compressed-for-site.png"
-	      		]
-
-// holds the titles of all the images
-var titles = [
-	//1-3
-	'Vision of a Dying Crab (1st Ed.) - 11x14 inches',
-	'Vision of a Dying Crab II (1st Ed.) - 11x14 inches',
-	'Crab (1st Ed.) - 12x9 inches',
-	//4-6
-	'The Botany Cipher (1st Ed.) - 9x12 inches',
-	'Capragraph II (1st. Ed.) - 10x14 inches',
-	'The Hunters (1st Ed.) - 11x15 inches',
-	//7-9
-	'Capragraph (1st Ed.) - 11x15',
-	'Augury (1st Ed.) - 12x16 inches',
-	'Castilla (1st Ed.) - 11x14 inches',
-	//10-12
-	"Mind's Eyedrops (1st Ed.) - 11x15 inches",
-	'Savannah of the Waning Gibbous (1st Ed.) - 9x12 inches',
-	'Rodentia (1st Ed.) - 18x12 inches',
-	//13-15
-	'Dream of Queen Meabh (1st Ed.) - 9x12 inches',
-	'Psyght (1st Ed.) - 11x14 inches',
-	'Ornithograph (2nd Ed.) - 12x16 inches',
-	//16-18
-	'The Font of Eschaton (2nd Ed.) - 11x15 inches',
-	'Ichthyograph (2nd Ed.) - 8x8 inches',
-	'Ornithograph II (3rd Ed.) - 12x16 inches',
-	//19-21
-	'Las Granadas (2nd Ed.) - 11x17 inches',
-	'Illuminette (2nd Ed.) - 9x12 inches',
-	'Prince Prospero (2nd Ed.) - 11x15 inches',
-	//22-24
-	'Large Bird Sticker - 7x6.74 inches',
-	'Large Fish Sticker - 6.86x5.5 inches',
-	'Small Bird Sticker - 4x3.86 inches',
-	//26-27
-	'Small Fish Sticker - 4x3.22 inches',
-	'At the Gates of Paradise (1st Ed.) - 11x14 inches',
-	'Minotaur in the Labyrinth - 11x14 inches',
-	//28-30
-	'Metamorphosis of Pomegranate and Pocketwatch - 9x12 inches',
-	'At the Gates of Paradise II - 11x15 inches',
-	'Bird-Whistle Metamorphosis - 9x12 inches',
-	//31-33
-	'Metamorphosis of Angelfish and Archipelago - 9x12 inches',
-	'Portrait of Infatuation - 11x14 inches',
-	'Portrait of Infatuation II - 11x14 inches',
-	//34-36
-	'Oasis - 9x12 inches',
-	'Metamorphosis of Crocodile and Pistol - 9x12 inches',
-	'Metamorphosis of Crab and Throne - 9x12 inches',
-	//37-39
-	'Creation Myth - 9x12 inches'
-];
-
 function startLightBox(event) {
 	index = parseInt(event.target.id);
+	const title = stock[index] && stock[index].title;
+	const image = stock[index] && stock[index].image;
+	const onSale = stock[index] && stock[index].onSale;
+	const salePrice = stock[index] && stock[index].salePrice;
+	const _price = stock[index] && stock[index].price;
 
-	if(index == 0) {	// Get the modal
-		var modal = document.getElementById('myModal');
-		
+	var modal = document.getElementById('myModal');
 
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var modalImg = document.getElementById("img");
+	var captionText = title;
+	document.getElementById('item_name').value = title;
+	modal.style.display = "block";
+	modalImg.src = image;
+	var price = document.getElementById('price');
+	price.innerHTML = `$${_price}`;
+	var price_caption = document.getElementById('price_caption');
+	document.getElementById('price_input').value = _price;
+	var caption = document.getElementById("caption");
+	caption.innerHTML = captionText;
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
 
-
-	    var price = document.getElementById('price');
-	    price.innerHTML = "$110";
-
-	    var price_caption = document.getElementById('price_caption');
-	    document.getElementById('price_input').value = 110;
-
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
+	if(onSale) {
+		price.classList.add('sale');
+		document.getElementById('price_input').value = salePrice;
+		var sale_price = document.getElementById('sale_price');
+		sale_price.style.display = "inline-block";
+		sale_price.innerHTML = `$${salePrice}`;
 	}
 
-	else if(index == 3) {	// Get the modal
-		var modal = document.getElementById('myModal');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-
-	    var price = document.getElementById('price');
-
-		var price_caption = document.getElementById('price_caption');
-	    price.innerHTML = "$45";
-
-	    document.getElementById('price_input').value = 45;
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-
-	else if(index == 5) {	// Get the modal
-		var modal = document.getElementById('myModal');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-
-	    var price = document.getElementById('price');
-	    price.innerHTML = "$60";
-
-		var price_caption = document.getElementById('price_caption');
-	    document.getElementById('price_input').value = 60;
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-
-	else if(index < 6 && index != 0 && index != 1) {	// Get the modal
-		var modal = document.getElementById('myModal');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-
-	    var price = document.getElementById('price');
-	    price.innerHTML = "$60";
-	    document.getElementById('price_input').value = 60;
-
-
-		var price_caption = document.getElementById('price_caption');
-
-
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-
-	else if(index == 8) {	// Get the modal
-		var modal = document.getElementById('myModal');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var price_caption = document.getElementById('price_caption');
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-
-	    var price = document.getElementById('price');
-	    price.innerHTML = "$45";
-		// price.classList.add('sale');
-	    document.getElementById('price_input').value = 45;
-
-		// var sale_price = document.getElementById('sale_price');
-		// sale_price.style.display = "inline-block";
-		// sale_price.innerHTML = '$33';
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-
-	else if(index == 10) {	// Get the modal
-		var modal = document.getElementById('myModal');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-		var price_caption = document.getElementById('price_caption');
-	    var price = document.getElementById('price');
-	    price.innerHTML = "$45";
-	    document.getElementById('price_input').value = 45;
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-
-	else if(index == 11) {	// Get the modal
-		var modal = document.getElementById('myModal');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-
-	    var price = document.getElementById('price');
-
-		var price_caption = document.getElementById('price_caption');
-	    price.innerHTML = "$45";
-	    document.getElementById('price_input').value = 45;
-
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-
-	else if(index == 13) {	// Get the modal
-		var modal = document.getElementById('myModal');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-
-	    var price = document.getElementById('price');
-
-		var price_caption = document.getElementById('price_caption');
-	    price.innerHTML = "$45";
-	    document.getElementById('price_input').value = 45;
-
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-
-		}
-	}
-
-	else if(index < 15 && index != 0 && index != 1) {	// Get the modal
-		var modal = document.getElementById('myModal');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-
-	    var price = document.getElementById('price');
-	    price.innerHTML = "$50";
-	    document.getElementById('price_input').value = 50;
-
-		var price_caption = document.getElementById('price_caption');
-
-
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-			sale_price.style.display = "none";
-			price.classList.remove('sale');
-		}
-	}
-
-	else if(index == 15){	// Get the modal
-		var modal = document.getElementById('myModal');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-
-		var price_caption = document.getElementById('price_caption');
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-
-	    var price = document.getElementById('price');
-	    price.innerHTML = "$100";
-	    document.getElementById('price_input').value = 100;
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-	
-	else if(index == 17){	// Get the modal
-		var modal = document.getElementById('myModal');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-
-	    var price = document.getElementById('price');
-	    price.innerHTML = "$60";
-	    document.getElementById('price_input').value = 60;
-
-
-		var price_caption = document.getElementById('price_caption');
-
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-
-	else if(index < 20 && index != 0 && index != 1 && index != 2 ){	// Get the modal
-		var modal = document.getElementById('myModal');
-
-
-		var price_caption = document.getElementById('price_caption');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-
-	    var price = document.getElementById('price');
-	    price.innerHTML = "$50";
-	    document.getElementById('price_input').value = 50;
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-
-	else if(index == 20){	// Get the modal
-		var modal = document.getElementById('myModal');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-
-	    var price = document.getElementById('price');
-	    price.innerHTML = "$90";
-		var price_caption = document.getElementById('price_caption');
-	    document.getElementById('price_input').value = 90;
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-	else if(index < 23 && index != 0 && index != 1){	// Get the modal
-		var modal = document.getElementById('myModal');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-
-		var price_caption = document.getElementById('price_caption');
-
-	    var price = document.getElementById('price');
-	    price.innerHTML = "$6";
-	    document.getElementById('price_input').value = 6;
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-	else if(index == 25) {	// Get the modal
-		var modal = document.getElementById('myModal');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-
-	    var price = document.getElementById('price');
-	    price.innerHTML = "$90 ";
-	    document.getElementById('price_input').value = 90;
-
-		var price_caption = document.getElementById('price_caption');
-		price_caption.innerHTML = " - Inquire for custom sizing";
-
-
-		var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-	//at the gates of paradise I
-	else if(index == 26) {	// Get the modal
-		var modal = document.getElementById('myModal');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-
-	    var price = document.getElementById('price');
-	    price.innerHTML = "$100 ";
-	    document.getElementById('price_input').value = 100;
-
-
-		var price_caption = document.getElementById('price_caption');
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+		modal.style.display = "none";
 		price_caption.innerHTML = "";
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-
-	//portrait of infatuation I and II
-	else if(index == 31 || index == 32) {	// Get the modal
-		var modal = document.getElementById('myModal');
-
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-		modal.style.display = "block";
-		modalImg.src = images[index];
-
-		var price = document.getElementById('price');
-		price.innerHTML = "$150 ";
-		document.getElementById('price_input').value = 150;
-
-		var price_caption = document.getElementById('price_caption');
-		price_caption.innerHTML = "";
-
-		var caption = document.getElementById("caption");
-		caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-			modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-
-	//metamorphosis series, plus oasis at 33, at the gates of paradiese II at 28
-	//vision of dying crab I and II at 1 and 2
-	else if(
-		index == 0 || index == 1 || index == 2 || index == 27 ||
-		index == 28 || index == 29 || index == 30 ||
-		index == 33 || index == 34 || index == 35) {	// Get the modal
-		var modal = document.getElementById('myModal');
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-		modal.style.display = "block";
-		modalImg.src = images[index];
-
-		var price = document.getElementById('price');
-		price.innerHTML = "$110";
-
-		var price_caption = document.getElementById('price_caption');
-		price_caption.innerHTML = "";
-		document.getElementById('price_input').value = 110;
-
-		//populate the drop down with variants
-		var caption = document.getElementById("caption");
-		caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-			modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-	else if(index == 36) {	// Get the modal
-		var modal = document.getElementById('myModal');
-
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-		modal.style.display = "block";
-		modalImg.src = images[index];
-
-		var price = document.getElementById('price');
-		price.innerHTML = "$85";
-
-
-
-		var price_caption = document.getElementById('price_caption');
-		price_caption.innerHTML = "";
-		document.getElementById('price_input').value = 85;
-
-
-		//populate the drop down with variants
-
-		var caption = document.getElementById("caption");
-		caption.innerHTML = captionText;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-			modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
-
-	else{
-		var modal = document.getElementById('myModal');
-		
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById(index);
-		var modalImg = document.getElementById("img");
-		var captionText = titles[index];
-		document.getElementById('item_name').value = titles[index];
-	    modal.style.display = "block";
-	    modalImg.src = images[index];
-	    var price = document.getElementById('price');
-	    price.innerHTML = "$4";
-
-		var price_caption = document.getElementById('price_caption');
-
-	    var caption = document.getElementById("caption");
-	    caption.innerHTML = captionText;
-	     document.getElementById('price_input').value = 4;
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-			price_caption.innerHTML = "";
-		}
-	}
+		sale_price.style.display = "none";
+		price.classList.remove('sale');
+	};
 }
 
 	

@@ -48,3 +48,9 @@ Built on Rails, utilizing PayPal/OAuth integrations for accepting payments.
 * ...
 
 
+
+
+Error Types Seen
+-Mismatch for Cipher, uninstall the duplicate version of ssl from your gems
+
+
