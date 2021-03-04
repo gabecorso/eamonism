@@ -115,6 +115,14 @@ const stock = [
 		salePrice: 63.75,
 		id: 36
 	},
+	{
+		title: "Benediction - 12x12 inches",
+		image: "https://eamonism.s3.amazonaws.com/Benediction--12x12--compressed.png",
+		price: 75,
+		onSale: false,
+		salePrice: 63.75,
+		id: 37
+	},
 ]
 
 var index;
