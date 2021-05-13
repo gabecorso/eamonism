@@ -123,6 +123,14 @@ const stock = [
 		salePrice: 63.75,
 		id: 37
 	},
+	{
+		title: "Cradle of Civilization - 11x14 inches",
+		image: "https://eamonism.s3.amazonaws.com/Cradle-of-Civilization---draft-compressed.png",
+		price: 75,
+		onSale: false,
+		salePrice: 75,
+		id: 38
+	},
 ]
 
 var index;
