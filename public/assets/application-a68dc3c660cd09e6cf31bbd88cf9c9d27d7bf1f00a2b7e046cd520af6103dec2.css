@@ -1,4 +1,4 @@
-/* line 1, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 1, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -12,12 +12,12 @@ html, body {
 /*******************************************************
 					LANDING PAGE
 *******************************************************/
-/* line 15, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 15, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .home-left {
   float: left;
 }
 
-/* line 19, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 19, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .title {
   font-size: 50px;
   font-family: Lato;
@@ -80,20 +80,20 @@ html, body {
     opacity: 0;
   }
 }
-/* line 85, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 85, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 #cf3 {
   position: relative;
   padding-top: 150px;
   margin-bottom: 600px;
 }
 
-/* line 90, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 90, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 #cf3 img {
   position: absolute;
   right: 0;
 }
 
-/* line 95, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 95, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 #cf3 img.top {
   -webkit-animation-name: cf3FadeInOut;
   -webkit-animation-timing-function: ease-in;
@@ -117,17 +117,17 @@ html, body {
   animation-direction: alternate;
 }
 
-/* line 121, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 121, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .dot {
   margin: 15px 0 0 185px;
 }
 
-/* line 125, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 125, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .dot img {
   padding-right: 20px;
 }
 
-/* line 129, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 129, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .sizeChoice {
   display: none;
   position: absolute;
@@ -135,12 +135,12 @@ html, body {
   overflow: hidden;
 }
 
-/* line 137, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 137, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .sizeHover:hover .sizeChoice {
   display: block;
 }
 
-/* line 142, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 142, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .sizeHover :hover {
   opacity: 0.8;
   background-color: black;
@@ -149,7 +149,7 @@ html, body {
 /*******************************************************
 			    PORTFOLIO / PHOTO GRID
 *******************************************************/
-/* line 152, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 152, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 hr {
   width: 100%;
   height: 2px;
@@ -158,13 +158,13 @@ hr {
   margin: 0;
 }
 
-/* line 160, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 160, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .wrap {
   overflow: hidden;
   margin-top: -2px;
 }
 
-/* line 165, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 165, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .box {
   float: left;
   position: relative;
@@ -173,7 +173,7 @@ hr {
   overflow: hidden;
 }
 
-/* line 173, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 173, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .boxS {
   float: left;
   position: relative;
@@ -182,15 +182,22 @@ hr {
   overflow: hidden;
 }
 
+/* line 181, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
+.boxXS {
+  float: left;
+  position: relative;
+  width: 50%;
+  padding-bottom: 25%;
+  overflow: hidden;
+}
 
-
-/* line 181, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 189, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .boxInner {
   position: absolute;
   width: 100%;
 }
 
-/* line 186, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 194, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .boxInner img {
   width: 100%;
   cursor: pointer;
@@ -200,7 +207,7 @@ hr {
   user-drag: none;
 }
 
-/* line 196, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 204, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .purchase-btn {
   background: url(/assets/purchase-5d008031edf40e09d0874e442ba78362ab701e0fc7d7c12ddb856d419c29557b.png) no-repeat;
   background-size: 100px 30px;
@@ -211,14 +218,14 @@ hr {
   height: 30px;
 }
 
-/* line 207, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 215, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
   margin-bottom: 0;
 }
 
 @media only screen and (max-width: 480px) {
   /* Smartphone view: 1 tile */
-  /* line 213, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 221, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .box {
     width: 100%;
     padding-bottom: 100%;
@@ -226,7 +233,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 @media only screen and (max-width: 650px) and (min-width: 481px) {
   /* Tablet view: 2 tiles */
-  /* line 221, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 229, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .box {
     width: 50%;
     padding-bottom: 50%;
@@ -234,7 +241,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 @media only screen and (max-width: 1050px) and (min-width: 651px) {
   /* Small desktop / ipad view: 3 tiles */
-  /* line 229, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 237, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .box {
     width: 33.3%;
     padding-bottom: 33.3%;
@@ -242,13 +249,13 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 @media only screen and (max-width: 1290px) and (min-width: 1051px) {
   /* Medium desktop: 4 tiles */
-  /* line 237, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 245, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .box {
     width: 33.3%;
     padding-bottom: 25%;
   }
 }
-/* line 243, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 251, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .sizes {
   margin: 15px 150px 15px 50%;
   font-family: Lato;
@@ -258,7 +265,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 /*******************************************************
 					ARTIST BIO
 *******************************************************/
-/* line 252, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 260, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .eamon {
   margin-top: 50px;
   margin-left: 175px;
@@ -267,7 +274,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   padding-bottom: 50px;
 }
 
-/* line 260, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 268, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .fname {
   position: absolute;
   color: white;
@@ -278,7 +285,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   text-shadow: 3px 3px 15px #000000;
 }
 
-/* line 270, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 278, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .lname {
   color: black;
   font-family: GothamBold;
@@ -286,23 +293,43 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   padding-top: 60px;
 }
 
-/* line 277, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 285, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .bio {
   margin: 40px 150px 0 600px;
   font-family: Lato;
   font-size: 18px;
 }
 
+/* line 291, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 294, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
+a:link {
+  color: Black;
+}
+
+/* line 297, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
+a:visited {
+  color: Black;
+}
+
+/* line 300, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
+a:hover {
+  color: SeaGreen;
+}
+
 /*******************************************************
 					CONTACT
 *******************************************************/
-/* line 286, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 307, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 #logo {
   padding-left: 175px;
   padding-top: 40px;
 }
 
-/* line 291, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 312, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .email {
   display: inline-block;
   padding-left: 30px;
@@ -312,7 +339,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   margin-top: -20px;
 }
 
-/* line 300, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 321, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .phone {
   display: inline-block;
   padding-left: 30px;
@@ -322,7 +349,18 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   margin-top: -20px;
 }
 
-/* line 309, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 330, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
+.insta {
+  display: inline-block;
+  padding-left: 30px;
+  font-family: Lato;
+  font-size: 17px;
+  vertical-align: middle;
+  margin-top: -40px;
+  text-decoration: none;
+}
+
+/* line 340, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .footer {
   width: 100%;
   background-color: black;
@@ -334,7 +372,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   font-size: 16px;
 }
 
-/* line 320, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 351, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .footer a {
   color: white;
   text-decoration: none;
@@ -344,14 +382,14 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 					MEDIA QUERIES
 *******************************************************/
 @media (min-width: 320px) {
-  /* line 330, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 361, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .section-header {
     font-family: Lato;
     font-size: 20px;
     padding: 20px 0 20px 30px;
   }
 
-  /* line 336, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 367, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .contact-details {
     font-family: Lato;
     font-size: 17px;
@@ -359,7 +397,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     text-align: center;
   }
 
-  /* line 343, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 374, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .eamon {
     margin-top: 50px;
     margin-left: 30px;
@@ -368,12 +406,12 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-bottom: 0px;
   }
 
-  /* line 351, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 382, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .eamon img {
     width: 270px;
   }
 
-  /* line 355, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 386, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .fname {
     position: absolute;
     color: white;
@@ -384,7 +422,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     text-shadow: 3px 3px 15px #000000;
   }
 
-  /* line 365, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 396, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .lname {
     color: black;
     font-family: GothamBold;
@@ -392,7 +430,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-left: 40px;
   }
 
-  /* line 372, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 403, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .bio {
     margin: 20px 50px 0 30px;
     font-family: Lato;
@@ -401,45 +439,45 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-bottom: 40px;
   }
 
-  /* line 380, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 411, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #cf3 {
     position: relative;
     padding-top: 150px;
     margin-bottom: 250px;
   }
 
-  /* line 386, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 417, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #cf3 img {
     width: 250px;
     padding-bottom: 100px;
   }
 
-  /* line 391, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 422, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .title {
     font-size: 25px;
     font-family: Lato;
     margin: 50px 0 0 30px;
   }
 
-  /* line 397, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 428, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .dot {
     margin: 15px 0 0 35px;
   }
 
-  /* line 401, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 432, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #logo {
     padding-left: 30px;
   }
 }
 @media (min-width: 400px) {
-  /* line 408, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 439, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .section-header {
     font-family: Lato;
     font-size: 20px;
     padding: 20px 0 20px 30px;
   }
 
-  /* line 414, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 445, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .eamon {
     margin-top: 50px;
     margin-left: 30px;
@@ -448,12 +486,12 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-bottom: 0px;
   }
 
-  /* line 422, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 453, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .eamon img {
     width: 300px;
   }
 
-  /* line 426, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 457, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .fname {
     position: absolute;
     color: white;
@@ -464,7 +502,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     text-shadow: 3px 3px 15px #000000;
   }
 
-  /* line 436, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 467, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .lname {
     color: black;
     font-family: GothamBold;
@@ -472,7 +510,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-left: 40px;
   }
 
-  /* line 443, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 474, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .bio {
     margin: 20px 50px 0 30px;
     font-family: Lato;
@@ -481,45 +519,45 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-bottom: 40px;
   }
 
-  /* line 451, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 482, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #cf3 {
     position: relative;
     padding-top: 150px;
     margin-bottom: 250px;
   }
 
-  /* line 457, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 488, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #cf3 img {
     width: 250px;
   }
 
-  /* line 461, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 492, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .title {
     font-size: 25px;
     font-family: Lato;
     margin: 50px 0 0 30px;
   }
 
-  /* line 467, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 498, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .dot {
     margin: 15px 0 0 35px;
   }
 
-  /* line 471, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 502, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #logo {
     padding-left: 30px;
   }
 }
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-  /* line 478, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 509, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .section-header {
     font-family: Lato;
     font-size: 20px;
     padding: 20px 0 20px 30px;
   }
 
-  /* line 484, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 515, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .eamon {
     margin-top: 50px;
     margin-left: 30px;
@@ -528,12 +566,12 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-bottom: 20px;
   }
 
-  /* line 492, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 523, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .eamon img {
     width: 300px;
   }
 
-  /* line 496, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 527, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .fname {
     position: absolute;
     color: white;
@@ -544,7 +582,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     text-shadow: 3px 3px 15px #000000;
   }
 
-  /* line 506, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 537, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .lname {
     color: black;
     font-family: GothamBold;
@@ -552,7 +590,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-top: 60px;
   }
 
-  /* line 513, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 544, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .bio {
     margin: 20px 100px 0 30px;
     font-family: Lato;
@@ -561,45 +599,45 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-bottom: 40px;
   }
 
-  /* line 521, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 552, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #cf3 {
     position: relative;
     padding-top: 150px;
     margin-bottom: 300px;
   }
 
-  /* line 527, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 558, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #cf3 img {
     width: 300px;
   }
 
-  /* line 531, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 562, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .title {
     font-size: 30px;
     font-family: Lato;
     margin: 200px 0 0 30px;
   }
 
-  /* line 537, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 568, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .dot {
     margin: 15px 0 0 35px;
   }
 
-  /* line 541, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 572, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #logo {
     padding-left: 30px;
   }
 }
 /* Larger than tablet */
 @media (min-width: 750px) {
-  /* line 548, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 579, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .section-header {
     font-family: Lato;
     font-size: 22px;
     padding: 20px 0 20px 100px;
   }
 
-  /* line 554, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 585, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .eamon {
     margin-top: 50px;
     margin-left: 100px;
@@ -608,12 +646,12 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-bottom: 20px;
   }
 
-  /* line 562, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 593, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .eamon img {
     width: 300px;
   }
 
-  /* line 566, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 597, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .fname {
     position: absolute;
     color: white;
@@ -624,7 +662,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     text-shadow: 3px 3px 15px #000000;
   }
 
-  /* line 576, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 607, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .lname {
     color: black;
     font-family: GothamBold;
@@ -632,7 +670,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-top: 60px;
   }
 
-  /* line 583, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 614, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .bio {
     margin: 20px 100px 0 100px;
     font-family: Lato;
@@ -642,38 +680,38 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     max-width: 700px;
   }
 
-  /* line 594, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 625, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #cf3 {
     position: relative;
     padding-top: 150px;
     margin-bottom: 400px;
   }
 
-  /* line 600, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 631, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #cf3 img {
     width: 400px;
   }
 
-  /* line 604, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 635, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .title {
     font-size: 40px;
     font-family: Lato;
     margin: 275px 0 0 100px;
   }
 
-  /* line 610, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 641, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .dot {
     margin: 15px 0 0 105px;
   }
 
-  /* line 614, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 645, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #logo {
     padding-left: 100px;
   }
 }
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  /* line 621, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 652, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .bio {
     margin: 20px 50px 0 600px;
     font-family: Lato;
@@ -681,7 +719,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     clear: none;
   }
 
-  /* line 628, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 659, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .eamon {
     margin-top: 50px;
     margin-left: 175px;
@@ -690,12 +728,12 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-bottom: 50px;
   }
 
-  /* line 636, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 667, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .eamon img {
     width: 375px;
   }
 
-  /* line 640, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 671, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .fname {
     position: absolute;
     color: white;
@@ -706,7 +744,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     text-shadow: 3px 3px 15px #000000;
   }
 
-  /* line 650, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 681, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .lname {
     color: black;
     font-family: GothamBold;
@@ -714,97 +752,97 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-top: 60px;
   }
 
-  /* line 657, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 688, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #cf3 {
     position: relative;
     padding-top: 150px;
     margin-bottom: 500px;
   }
 
-  /* line 663, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 694, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #cf3 img {
     width: 450px;
   }
 
-  /* line 667, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 698, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .home-left {
     float: left;
   }
 
-  /* line 671, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 702, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .title {
     font-size: 50px;
     font-family: Lato;
     margin: 275px 0 0 175px;
   }
 
-  /* line 677, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 708, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .dot {
     margin: 15px 0 0 185px;
   }
 
-  /* line 681, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 712, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .dot img {
     padding-right: 20px;
   }
 
-  /* line 685, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 716, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .section-header {
     font-family: Lato;
     font-size: 25px;
     padding: 20px 0 20px 175px;
   }
 
-  /* line 691, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 722, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #logo {
     padding-left: 175px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 697, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 728, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #cf3 {
     position: relative;
     padding-top: 150px;
     margin-bottom: 600px;
   }
 
-  /* line 703, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 734, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   #cf3 img {
     position: absolute;
     right: 0;
     width: 600px;
   }
 
-  /* line 709, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 740, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .home-left {
     float: left;
   }
 
-  /* line 713, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 744, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .title {
     font-size: 50px;
     font-family: Lato;
     margin: 275px 0 0 175px;
   }
 
-  /* line 719, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 750, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .dot {
     margin: 15px 0 0 185px;
   }
 
-  /* line 723, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 754, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .dot img {
     padding-right: 20px;
   }
 
-  /* line 727, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 758, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .bio {
     margin: 40px 150px 0 600px;
     font-family: Lato;
     font-size: 18px;
   }
 
-  /* line 733, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 764, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .fname {
     position: absolute;
     color: white;
@@ -815,7 +853,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     text-shadow: 3px 3px 15px #000000;
   }
 
-  /* line 743, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 774, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .lname {
     color: black;
     font-family: GothamBold;
@@ -826,20 +864,20 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 /*******************************************************
 					MODAL
 *******************************************************/
-/* line 754, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 785, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 #myImg {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-/* line 760, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 791, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 #myImg:hover {
   opacity: 0.7;
 }
 
 /* The Modal (background) */
-/* line 763, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 794, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .modal {
   display: none;
   /* Hidden by default */
@@ -864,7 +902,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 
 /* Modal Content (image) */
-/* line 778, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 809, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .modal-content {
   margin: auto;
   display: block;
@@ -876,7 +914,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 
 /* Caption of Modal Image */
-/* line 789, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 820, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 #caption {
   padding-bottom: 10px;
   display: inline-block;
@@ -886,29 +924,82 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   vertical-align: top;
 }
 
-/* line 798, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 831, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
+.sale {
+  position: relative;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 837, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
+.sale::before {
+  position: absolute;
+  content: "";
+  opacity: 1;
+  left: 10%;
+  top: .55em;
+  right: 0;
+  color: red;
+  border-top: 3px solid;
+  border-color: inherit;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+/* line 853, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
+#price_container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+/* line 860, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 #price {
   padding-left: 15px;
   display: inline-block;
   color: #ccc;
+  opacity: .7;
   font-family: Lato;
   font-size: 24px;
   vertical-align: top;
 }
 
-/* line 808, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 870, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
+#sale_price {
+  padding-left: 15px;
+  display: inline-block;
+  color: #ccc;
+  opacity: 1;
+  font-family: Lato;
+  font-size: 24px;
+  vertical-align: top;
+}
+
+/* line 883, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
+#price_caption {
+  display: inline-block;
+  color: #ccc;
+  font-family: Lato;
+  font-size: 24px;
+  margin-left: 5px;
+  vertical-align: top;
+}
+
+/* line 893, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .wrapModalImg {
   max-width: 700px;
   margin: 0 auto;
 }
 
-/* line 813, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 898, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .purchase {
   display: inline-block;
   margin-left: 20px;
 }
 
-/* line 818, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 904, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 #discount_code {
   display: inline-block;
   padding-left: 5px;
@@ -917,7 +1008,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 
 /* Add Animation */
-/* line 827, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 913, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .modal-content, #caption, .purchase {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -942,7 +1033,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   }
 }
 /* The Close Button */
-/* line 845, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 931, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .close {
   position: absolute;
   top: 15px;
@@ -953,7 +1044,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   transition: 0.3s;
 }
 
-/* line 855, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+/* line 941, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
 .close:hover,
 .close:focus {
   color: #bbb;
@@ -963,7 +1054,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
-  /* line 864, /Users/BuddhistWalrus/Code/Eamonism/app/assets/stylesheets/main.scss */
+  /* line 950, /Users/walrusmini/Code/Eamonism/app/assets/stylesheets/main.scss */
   .modal-content {
     width: 100%;
   }
