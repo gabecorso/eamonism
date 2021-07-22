@@ -62,7 +62,7 @@ const stock = [
 	{title: "Ichthyograph (2nd Ed.) - 8x8 inches", image: "https://s3.amazonaws.com/eamonism/GildedFish.jpg", price: 50, onSale: false, salePrice: 37.5, id: 16},
 	{title: "Ornithograph II (3rd Ed.) - 12x16 inches", image: "https://s3.amazonaws.com/eamonism/port10.jpg", price: 60, onSale: false, salePrice: 45, id: 17},
 	//18-20
-	{title: "Las Granadas (2nd Ed.) - 11x17 inches", image: "https://s3.amazonaws.com/eamonism/Granadas.jpg", price: 50, onSale: false, salePrice: 37.5, id: 18},
+	{title: "Las Granadas (2nd Ed.) - 11x17 inches", image: "https://s3.amazonaws.com/eamonism/Granadas.jpg", price: 60, onSale: false, salePrice: 37.5, id: 18},
 	{title: "Illuminette (2nd Ed.) - 9x12 inches", image: "https://s3.amazonaws.com/eamonism/Illuminette.jpg", price: 50, onSale: false, salePrice: 37.5, id: 19},
 	{title: "Prince Prospero (2nd Ed.) - 11x15 inches", image: "https://s3.amazonaws.com/eamonism/Prospero.jpg", price: 80, onSale: false, salePrice: 67.5, id: 20},
 	//21-23
