@@ -26,7 +26,7 @@ class WelcomeController < ApplicationController
 				shipping = 0.98
 			end
 			if params[:discount_code] == "MAILER1!"
-                price = (params[:price_input].to_f *= (0.80)).round
+                price = (params[:price_input].to_f * (0.80)).round
             end
 		end
 
