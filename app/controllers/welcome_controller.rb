@@ -20,8 +20,8 @@ class WelcomeController < ApplicationController
 		if params[:item_name]
 			item_name = params[:item_name]
 		end
-		if params[:discount_code] == "Dart1"
-			shipping = 0
+		if params[:discount_code] == "MAILER1!"
+			params[:price_input] = params[:price_input] - (params[:price_input]*.20)
 		end
 		if params[:price_input]
 			price = params[:price_input]
