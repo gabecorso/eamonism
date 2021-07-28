@@ -43,7 +43,7 @@ const stock = [
 		salePrice: 33.75,
 		id: 3
 	},
-	{title: "Capragraph II (1st. Ed.) - 10x14 inches", image: "https://s3.amazonaws.com/eamonism/Capragraph2.jpg", price: 60, onSale: false, salePrice: 45, id: 4},
+	{title: "Capragraph II (3rd. Ed.) - 10x14 inches", image: "https://s3.amazonaws.com/eamonism/Capragraph2.jpg", price: 75, onSale: false, salePrice: 45, id: 4},
 	{title: "The Hunters (1st Ed.) - 11x15 inches", image: "https://s3.amazonaws.com/eamonism/Hunters.jpg", price: 60, onSale: false, salePrice: 45, id: 5},
 	//6-8
 	{title: "Capragraph (1st Ed.) - 11x15", image: "https://s3.amazonaws.com/eamonism/Capragraph.jpg", price: 60, onSale: false, salePrice: 37.5, id: 6},
