@@ -28,6 +28,11 @@ class WelcomeController < ApplicationController
 			if params[:discount_code] == "MAILER1!"
                 price = (params[:price_input].to_f * (0.80)).round
             end
+            if params[:discount_code] == "GATES20"
+                if params[:item_name] == 'At the Gates of Paradise II (2nd Edition) - 11x15 inches'
+                            price = (params[:price_input].to_f * (0.80)).round
+                end
+            end
 		end
 
 		redirect_to @order.paypal_url(root_path, item_name, shipping, price)
