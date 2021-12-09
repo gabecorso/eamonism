@@ -69,8 +69,8 @@ const stock = [
 	{title: "Ornithograph (2nd Ed.) - 12x16 inches", image: "https://s3.amazonaws.com/eamonism/Ornithograph.jpg",
 		price: 60, onSale: true, salePrice: 48, id: 14},
 	//15-17
-	{title: "The Font of Eschaton (2nd Ed.) - 11x15 inches", image: "https://s3.amazonaws.com/eamonism/port12.jpg",
-		price: 80, onSale: true, salePrice: 64, id: 15},
+	{title: "The Font of Eschaton (3rd Ed.) - 11x15 inches", image: "https://s3.amazonaws.com/eamonism/port12.jpg",
+		price: 90, onSale: true, salePrice: 72, id: 15},
 	{title: "Ichthyograph (2nd Ed.) - 8x8 inches", image: "https://s3.amazonaws.com/eamonism/GildedFish.jpg",
 		price: 50, onSale: true, salePrice: 40, id: 16},
 	{title: "Ornithograph II (3rd Ed.) - 12x16 inches", image: "https://s3.amazonaws.com/eamonism/port10.jpg",
@@ -99,7 +99,7 @@ const stock = [
 	//27-29
 	{title: "Metamorphosis of Pomegranate and Pocketwatch - 9x12 inches", image: "https://eamonism.s3.amazonaws.com/pomegranate-metamorphosis-compressed-for-web.jpg",
 		price: 80, onSale: true, salePrice: 64, id: 27},
-	{title: "At the Gates of Paradise II - 11x15 inches", image: "https://eamonism.s3.amazonaws.com/At-The-Gates-of-Paradise-II----11x15----Compressed-for-site.jpg",
+	{title: "At the Gates of Paradise II (2nd Edition) - 11x15 inches", image: "https://eamonism.s3.amazonaws.com/At-The-Gates-of-Paradise-II----11x15----Compressed-for-site.jpg",
 		price: 85, onSale: true, salePrice: 68, id: 28},
 	{title: "Bird-Whistle Metamorphosis - 9x12 inches", image: "https://eamonism.s3.amazonaws.com/Bird-to-Whistle-on-9x12----compressed.jpg",
 		price: 80, onSale: true, salePrice: 64, id: 29},
