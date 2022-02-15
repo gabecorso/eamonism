@@ -166,6 +166,14 @@ const stock = [
 		salePrice: 60,
 		id: 39
 	},
+	{
+		title: "Death of the Minotaur - 11x15in",
+		image: "https://eamonism.s3.amazonaws.com/Death-of-the-Minotaur---Flattened-on-White.png",
+		price: 85,
+		onSale: false,
+		salePrice: 60,
+		id: 42
+	},
 
 
 	//40 and 41 (Stickers Small)
