@@ -174,6 +174,14 @@ const stock = [
 		salePrice: 60,
 		id: 42
 	},
+	{
+		title: "Clarity - 11x14in",
+		image: "https://eamonism.s3.amazonaws.com/Clarity---Merged---Compressed.png",
+		price: 75,
+		onSale: false,
+		salePrice: 60,
+		id: 43
+	},
 
 
 	//40 and 41 (Stickers Small)
