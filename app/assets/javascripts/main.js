@@ -182,6 +182,14 @@ const stock = [
 		salePrice: 60,
 		id: 43
 	},
+	{
+		title: "House of Timur - 11x14in",
+		image: "https://eamonism.s3.amazonaws.com/House-of-Timur----Thumbnail.png",
+		price: 75,
+		onSale: false,
+		salePrice: 60,
+		id: 44
+	},
 
 
 	//40 and 41 (Stickers Small)
