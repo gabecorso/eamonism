@@ -184,7 +184,7 @@ const stock = [
 	},
 	{
 		title: "House of Timur - 11x14in",
-		image: "https://eamonism.s3.amazonaws.com/House-of-Timur----Thumbnail.png",
+		image: "https://eamonism.s3.amazonaws.com/House-of-Timur----Compressed.png",
 		price: 75,
 		onSale: false,
 		salePrice: 60,
