@@ -200,6 +200,7 @@ const stock = [
 	},
 
 
+
 	//40 and 41 (Stickers Small)
 	{title: "Capragraph Sticker - 4x3.86 inches", image: "https://eamonism.s3.amazonaws.com/Capragraph+Sticker.png",
 		price: 4, onSale: false, salePrice: '', id: 40},
