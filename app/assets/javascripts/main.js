@@ -190,6 +190,14 @@ const stock = [
 		salePrice: 60,
 		id: 44
 	},
+	{
+		title: "Jellyfish I - 12x12in",
+		image: "https://eamonism.s3.amazonaws.com/Jellyfish-Square---Compressed-v2.png",
+		price: 75,
+		onSale: false,
+		salePrice: 60,
+		id: 45
+	},
 
 
 	//40 and 41 (Stickers Small)
