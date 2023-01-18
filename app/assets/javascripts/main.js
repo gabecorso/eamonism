@@ -198,6 +198,14 @@ const stock = [
 		salePrice: 60,
 		id: 45
 	},
+	{
+		title: "Jellyfish II - 11x14in",
+		image: "https://eamonism.s3.amazonaws.com/Jellyfish-II----compressed.png",
+		price: 75,
+		onSale: false,
+		salePrice: 60,
+		id: 46
+	},
 
 
 
