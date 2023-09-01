@@ -217,7 +217,7 @@ const stock = [
 	{
 		title: "Astrolabe Infinity - Miniature - 5x7in",
 		image: "https://eamonism.s3.amazonaws.com/Astrolabe-Infinity---5x7---compressed-for-site.png",
-		price: 75,
+		price: 15,
 		onSale: false,
 		salePrice: 60,
 		id: 48
@@ -225,7 +225,7 @@ const stock = [
 	{
 		title: "Mind's Eyedrops - Miniature - 5x7in",
 		image: "https://eamonism.s3.amazonaws.com/Mind's-Eyedrops---5x7--Compressed-for-site.jpg",
-		price: 75,
+		price: 15,
 		onSale: false,
 		salePrice: 60,
 		id: 49
@@ -233,7 +233,7 @@ const stock = [
 	{
 		title: "Ichthyograph II - Miniature - 5x7in",
 		image: "https://eamonism.s3.amazonaws.com/Fish----5x7----Compressed-for-site.jpg",
-		price: 75,
+		price: 15,
 		onSale: false,
 		salePrice: 60,
 		id: 50
@@ -241,7 +241,7 @@ const stock = [
 	{
 		title: "Ornithograph II - Miniature - 5x7in",
 		image: "https://eamonism.s3.amazonaws.com/Bird----5x7----Compressed-for-site.jpg",
-		price: 75,
+		price: 15,
 		onSale: false,
 		salePrice: 60,
 		id: 51
@@ -249,7 +249,7 @@ const stock = [
 	{
 		title: "Capragraph II - Miniature - 5x7in",
 		image: "https://eamonism.s3.amazonaws.com/Ibex----5x7----Compressed-for-site.jpg",
-		price: 75,
+		price: 15,
 		onSale: false,
 		salePrice: 60,
 		id: 52
