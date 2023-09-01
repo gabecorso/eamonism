@@ -206,6 +206,78 @@ const stock = [
 		salePrice: 60,
 		id: 46
 	},
+	{
+		title: "Botany Cipher - Miniature - 5x7in",
+		image: "https://eamonism.s3.amazonaws.com/Botany-Cipher--5x7--Compressed-for-site.jpg",
+		price: 15,
+		onSale: false,
+		salePrice: 60,
+		id: 47
+	},
+	{
+		title: "Astrolabe Infinity - Miniature - 5x7in",
+		image: "https://eamonism.s3.amazonaws.com/Astrolabe-Infinity---5x7---compressed-for-site.png",
+		price: 75,
+		onSale: false,
+		salePrice: 60,
+		id: 48
+	},
+	{
+		title: "Mind's Eyedrops - Miniature - 5x7in",
+		image: "https://eamonism.s3.amazonaws.com/Mind's-Eyedrops---5x7--Compressed-for-site.jpg",
+		price: 75,
+		onSale: false,
+		salePrice: 60,
+		id: 49
+	},
+	{
+		title: "Ichthyograph II - Miniature - 5x7in",
+		image: "https://eamonism.s3.amazonaws.com/Fish----5x7----Compressed-for-site.jpg",
+		price: 75,
+		onSale: false,
+		salePrice: 60,
+		id: 50
+	},
+	{
+		title: "Ornithograph II - Miniature - 5x7in",
+		image: "https://eamonism.s3.amazonaws.com/Bird----5x7----Compressed-for-site.jpg",
+		price: 75,
+		onSale: false,
+		salePrice: 60,
+		id: 51
+	},
+	{
+		title: "Capragraph II - Miniature - 5x7in",
+		image: "https://eamonism.s3.amazonaws.com/Ibex----5x7----Compressed-for-site.jpg",
+		price: 75,
+		onSale: false,
+		salePrice: 60,
+		id: 52
+	},
+	{
+		title: "Heartbeat - 11x14in",
+		image: "https://eamonism.s3.amazonaws.com/Heartbeat--compressed-for-site.jpg",
+		price: 75,
+		onSale: false,
+		salePrice: 60,
+		id: 53
+	},
+	{
+		title: "Vanitas - 11x14in",
+		image: "https://eamonism.s3.amazonaws.com/Vanitas--compressed-for-site.png",
+		price: 75,
+		onSale: false,
+		salePrice: 60,
+		id: 54
+	},
+	{
+		title: "Abstraction - 12x12in",
+		image: "https://eamonism.s3.amazonaws.com/Abstraction-12x12---Compressed-for-website.png",
+		price: 60,
+		onSale: false,
+		salePrice: 60,
+		id: 55
+	},
 
 
 
