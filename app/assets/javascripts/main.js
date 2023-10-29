@@ -284,10 +284,11 @@ const stock = [
 		id: 55
 	},
 	//54 and 55 (Stickers Small)
-	{title: "Capragraph Sticker - 4x3.86 inches", image: "https://eamonism.s3.amazonaws.com/Capragraph+Sticker.png",
-		price: 4, onSale: false, salePrice: '', id: 56},
 	{title: "Tri Hard Sticker - 4x3.86 inches", image: "https://eamonism.s3.amazonaws.com/Tri-Hard+Sticker+Image.png",
 		price: 4, onSale: false, salePrice: '', id: 57},
+	{title: "Capragraph Sticker - 4x3.86 inches", image: "https://eamonism.s3.amazonaws.com/Capragraph+Sticker.png",
+		price: 4, onSale: false, salePrice: '', id: 56},
+	
 
 	// ADD NEW STOCK HERE PLEASE
 ]
