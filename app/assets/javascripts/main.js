@@ -133,7 +133,7 @@ const stock = [
 		salePrice: 64,
 		id: 35
 	},
-	//36
+	//36-38
 	{
 		title: "Creation Myth - 9x12 inches",
 		image: "https://eamonism.s3.amazonaws.com/Creation-Myth---compressed-for-site.png",
@@ -158,6 +158,7 @@ const stock = [
 		salePrice: 60,
 		id: 38
 	},
+	//39-41
 	{
 		title: "Cradle of Civilization II - 11x14 inches",
 		image: "https://eamonism.s3.amazonaws.com/Cradle-of-Civilization-II----compressed-for-site.png",
@@ -182,6 +183,7 @@ const stock = [
 		salePrice: 60,
 		id: 43
 	},
+	//42-44
 	{
 		title: "House of Timur - 11x14in",
 		image: "https://eamonism.s3.amazonaws.com/House-of-Timur----Compressed.png",
@@ -206,6 +208,7 @@ const stock = [
 		salePrice: 60,
 		id: 46
 	},
+	//45-47
 	{
 		title: "Botany Cipher - Miniature - 5x7in",
 		image: "https://eamonism.s3.amazonaws.com/Botany-Cipher--5x7--Compressed-for-site.jpg",
@@ -230,6 +233,7 @@ const stock = [
 		salePrice: 60,
 		id: 49
 	},
+	//48-50
 	{
 		title: "Ichthyograph II - Miniature - 5x7in",
 		image: "https://eamonism.s3.amazonaws.com/Fish----5x7----Compressed-for-site.jpg",
@@ -254,6 +258,7 @@ const stock = [
 		salePrice: 60,
 		id: 52
 	},
+	//51-53
 	{
 		title: "Heartbeat - 11x14in",
 		image: "https://eamonism.s3.amazonaws.com/Heartbeat--compressed-for-site.jpg",
@@ -278,14 +283,13 @@ const stock = [
 		salePrice: 60,
 		id: 55
 	},
-
-
-
-	//56 and 57 (Stickers Small)
+	//54 and 55 (Stickers Small)
 	{title: "Capragraph Sticker - 4x3.86 inches", image: "https://eamonism.s3.amazonaws.com/Capragraph+Sticker.png",
 		price: 4, onSale: false, salePrice: '', id: 56},
 	{title: "Tri Hard Sticker - 4x3.86 inches", image: "https://eamonism.s3.amazonaws.com/Tri-Hard+Sticker+Image.png",
 		price: 4, onSale: false, salePrice: '', id: 57},
+
+	// ADD NEW STOCK HERE PLEASE
 ]
 
 var index;
