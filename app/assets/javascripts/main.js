@@ -291,6 +291,14 @@ const stock = [
 	
 
 	// ADD NEW STOCK HERE PLEASE
+	{
+		title: "The Judgement of Paris - 12x12in",
+		image: "https://eamonism.s3.us-east-1.amazonaws.com/Judgement-of-Paris----Export.png",
+		price: 80,
+		onSale: false,
+		salePrice: 80,
+		id: 58
+	},
 ]
 
 var index;
