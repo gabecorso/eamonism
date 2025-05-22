@@ -1,10 +1,10 @@
 source 'http://rubygems.org'
 
-ruby "2.7.2"
+ruby "3.1.7"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.5'
 # Use sqlite3 as the database for Active Record
-gem 'pg', '~> 0.21' 
+gem 'pg', '~> 1.4.0' 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -21,7 +21,7 @@ gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', '~> 1.0.0', group: :doc
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -43,3 +43,7 @@ group :development, :test do
   gem 'spring'
 end
 
+
+gem "mini_portile2", "~> 2.5"
+gem 'nio4r', '~> 2.5.8'
+gem 'json', '~> 2.6.0'
