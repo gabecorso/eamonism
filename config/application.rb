@@ -6,6 +6,9 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+# Configure YAML to allow aliases
+# YAML.load_file = ->(file) { Psych.safe_load(File.read(file), aliases: true) }
+
 module Eamonism
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -21,7 +24,22 @@ module Eamonism
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.active_record.raise_in_transactional_callbacks = true
     config.serve_static_assets = true
+  end
+end
+
+# Patch Rails to allow YAML aliases in database.yml
+module Rails
+  class Application
+    class Configuration
+      def database_configuration
+        config_path = Rails.root.join('config', 'database.yml')
+        if YAML.respond_to?(:unsafe_load_file)
+          YAML.unsafe_load_file(config_path)
+        else
+          Psych.safe_load(File.read(config_path), aliases: true)
+        end
+      end
+    end
   end
 end
